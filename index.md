@@ -3,3 +3,5 @@
 
 ### Weekly activities
 * Week 11: Bio-Inspired AI
+  * Readings:
+  * Assignment:
