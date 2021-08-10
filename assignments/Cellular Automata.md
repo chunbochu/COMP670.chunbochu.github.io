@@ -4,6 +4,6 @@ Diffusion-limited aggregation (DLA) is the process whereby particles undergoing 
 
 
 ![image1](ca/CA1.png)
-(a) 	(b)
 
-Figure 1: (a) DLA structure grown from a copper sulfate solution in an electrodeposition cell. (b) Red coral Errina novaezelandiae in the Te Awaatu Marine Reserve in Fiordland.
+
+Figure 1: (left) DLA structure grown from a copper sulfate solution in an electrodeposition cell. (right) Red coral Errina novaezelandiae in the Te Awaatu Marine Reserve in Fiordland.
