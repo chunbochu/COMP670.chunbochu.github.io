@@ -14,8 +14,26 @@ The goal of this exercise is to implement a two-dimensional CA that mimics a DLA
 
 ![image2](ca/CA2.png)
 
-Figure 6: First run of ca.m.  The above automaton space is defined by an array of
+Figure 2: First run of ca.m.  The above automaton space is defined by an array of
 40x40 cells. Motionless particles (in blue) are initially present in the environment.
 
+** Implementation of a Pseudo Brownian Motion
+
+This section describes how to obtain particles that undergo a random walk. These particles are assumed to be in low concentrations, so no interaction between them are modeled.
+
+Start by setting in the code the number of time steps to T=7000. Run ca.m and observe the motion of the particles. Note that you can speed up or slow down the walk
+of the particles by adjusting the parameter delay. You can also change the size of the
+automaton space (nx and ny must be divisible by 2) or resize the window to get a better visibility. Try to qualify the movement of the particles. 
+```diff
+- What kind of neighborhood is implemented? 
+- Does the observed motion feature some randomness? If it's possible, find the deterministic and random components of the motion.
+```
+
+Try to understand what does the code between the tags “Pseudo Brownian motion" and “End". The automaton space is divided into blocks of 2x2 cells inside which the position of the particles is updated. At each time step, two random, complementary matrices containing “0" and “1" elements are generated (cw and ccw). 
+```diff
+- With your understanding of the code, find and draw the updated position of the particles at time t+1 for the initial configuration of the following 4x4 CA. 
+```
+Consider vectors xind =yind = [1, 3] which define the indexes of the upper-left cell of each block, and black cells below to represent particles and/or “1" matrix elements.
+(Hint: only the elements in cw that are defined by xind and yind are used, that are here cw(1, 1), cw(3, 1), cw(1,3), and cw(3,3).)
 
 ****
