@@ -1,7 +1,7 @@
 # COMP 670 AI Game Project, Summer 2021
 ## Othello Game
 
-###Introduction
+### Introduction
 
 Othello is a well-known two-player strategy game. For this project, you
 will develop portions of an intelligent program that plays Othello. You
@@ -13,7 +13,7 @@ will allow the computer to play the game.
 Othello ---also known as Reversi ---is played on a square board divided
 into an 8×8 grid. The rules of the game, along with some good ideas for
 a sound strategy of play, are described in the [[Wikipedia entry on
-Reversi](http://en.wikipedia.org/wiki/Reversi)](https://en.wikipedia.org/wiki/Reversi)---do
+Reversi] (http://en.wikipedia.org/wiki/Reversi)]---do
 read it!
 
 Be sure you know how to play the game before attempting to complete this
@@ -24,7 +24,7 @@ provided game will not allow you to play against a computer player until
 you create your AI class and write the necessary OthelloAIFactory class
 code (see below).
 
-***Starting Point***
+### Starting Point
 
 All the code that you'll need to complete the assignment is included in
 the COMP670-Othello.zip file; download the file, unzip it, and import to
@@ -38,17 +38,13 @@ project is ready to be imported in Eclipse.
 To import this project to your Eclipse workspace,
 
 1.  Unzip the starter file.
-
 2.  Start eclipse and select your workspace.
-
 3.  From the file menu, select Import\..., which will pop up a dialog
     box. under General, select Existing projects into workspace, then
     click Next \>.
-
 4.  Next to Select root directory, click the Browse button. Find the
     COMP670-Othello folder that you just unzipped the starter into,
     select it, then click OK.
-
 5.  Finally, click Finish. You should now see a project
     called COMP670-Othello in the Package Explorer. Your Problems window
     may show some warnings; each of these warnings indicates that there
