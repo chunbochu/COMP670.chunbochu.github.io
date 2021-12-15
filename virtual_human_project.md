@@ -1,7 +1,8 @@
 # COMP 670 Virtual Human Project
 
 Recommended reference book:
-[Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN	1801077053, 9781801077057
+[Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN	1801077053, 9781801077057.
+
 This book is free to access via your Franklin account.
 
 
