@@ -1,6 +1,5 @@
+*COMP 670 AI Game Project, Summer 2021*
 **Othello Game**
-
-**COMP 670 AI Game Project, Summer 2021**
 
 ***Introduction***
 
