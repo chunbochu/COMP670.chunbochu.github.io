@@ -1,7 +1,7 @@
-*COMP 670 AI Game Project, Summer 2021*
-**Othello Game**
+# COMP 670 AI Game Project, Summer 2021
+## Othello Game
 
-***Introduction***
+###Introduction
 
 Othello is a well-known two-player strategy game. For this project, you
 will develop portions of an intelligent program that plays Othello. You
