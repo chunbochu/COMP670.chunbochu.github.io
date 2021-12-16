@@ -13,7 +13,7 @@ will allow the computer to play the game.
 Othello ---also known as Reversi ---is played on a square board divided
 into an 8×8 grid. The rules of the game, along with some good ideas for
 a sound strategy of play, are described in the [Wikipedia entry on
-Reversi] (http://en.wikipedia.org/wiki/Reversi)---do
+Reversi](http://en.wikipedia.org/wiki/Reversi)---do
 read it!
 
 Be sure you know how to play the game before attempting to complete this
@@ -42,26 +42,26 @@ To import this project to your Eclipse workspace,
 3.  From the file menu, select `Import\...`, which will pop up a dialog
     box. under `General`, select Existing projects into workspace, then
     click `Next >`.
-4.  Next to Select root directory, click the Browse button. Find the
+4.  Next to `Select root directory`, click the `Browse` button. Find the
     COMP670-Othello folder that you just unzipped the starter into,
-    select it, then click OK.
-5.  Finally, click Finish. You should now see a project
-    called COMP670-Othello in the Package Explorer. Your Problems window
+    select it, then click `OK`.
+5.  Finally, click `Finish`. You should now see a project
+    called `COMP670-Othello` in the Package Explorer. Your Problems window
     may show some warnings; each of these warnings indicates that there
     is a part of the program that has yet to be built.
 
 You will only need to work on two classes. First, you need to create a
-new class that implements the OthelloAI interface. Your class'
-name *must begin with OthelloAI\_, followed by your team#*. So, if your
-team \# is 1, your class should be named OthelloAI_Team1.
+new class that implements the `OthelloAI` interface. Your class'
+name *must begin with `OthelloAI\_`, followed by your `full name`.* So, if your
+name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
 
-Second, you write one line of code in the OthelloAIFactory class; see
+Second, you write one line of code in the `OthelloAIFactory` class; see
 the class' comments for details.
 
 *Leave everything else as is. In particular, do not change the names of
 files, classes, interfaces or methods that are provided.*
 
-***How to run the program***
+### How to run the program
 
 Make sure that your Java version is 11 or higher. It's recommended to
 install the newest Java JDK.
