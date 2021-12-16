@@ -465,15 +465,15 @@ There are three deliverables to turn in for your AI Game Project.
     testing plan in this assignment. Provide answers to the following
     questions:
 
-    a.  What are the major challenges you have encountered? How did you
+        a.  What are the major challenges you have encountered? How did you
         solve them?
 
-    b.  Which subtask takes the most time to complete? Why?
+        b.  Which subtask takes the most time to complete? Why?
 
-    c.  How did you conduct test and modified your AI based on the
+        c.  How did you conduct test and modified your AI based on the
         results? Document each step and action you take.
 
-    d.  Has every team member contributed fairly by completing the
+        d.  Has every team member contributed fairly by completing the
         subtasks assigned to him/her?
 
     Also turn in only the Java file containing your AI class, (which will
