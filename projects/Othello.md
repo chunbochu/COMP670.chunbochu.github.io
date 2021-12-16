@@ -143,8 +143,7 @@ permitted to make at the opening. (All other moves are illegal and, as
 such, are not to be considered.)
 
 Take a look at this partial Othello game tree:
-
-![https://www.ics.uci.edu/\~jacobson/ics23/LabManual/02-SearchTree.jpg](images/media/image1.jpeg){width="5.260416666666667in"
+![Othello game trees](othello-game-trees.jpeg){width="5.260416666666667in"
 height="2.7743055555555554in"}
 
 From the initial state, the root of the tree, there are four
