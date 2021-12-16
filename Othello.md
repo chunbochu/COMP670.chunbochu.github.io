@@ -52,7 +52,7 @@ To import this project to your Eclipse workspace,
 
 You will only need to work on two classes. First, you need to create a
 new class that implements the `OthelloAI` interface. Your class'
-name *must begin with `OthelloAI\_`, followed by your `full name`.* So, if your
+name *must begin with `OthelloAI_`, followed by your `full name`.* So, if your
 name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
 
 Second, you write one line of code in the `OthelloAIFactory` class; see
@@ -66,14 +66,14 @@ files, classes, interfaces or methods that are provided.*
 Make sure that your Java version is 11 or higher. It's recommended to
 install the newest Java JDK.
 
-The Othello class contains a main() method, so to run the program,
-execute the Othello class.
+The `Othello` class contains a `main()` method, so to run the program,
+execute the `Othello` class.
 
 When you run Othello, a window will appear with a green area with the
-label click here to start game. Click the green area and you will be
+label `click here to start game`. Click the green area and you will be
 asked to specify whether each player should be controlled by a human or
 the computer; for now, specify human for both, as you haven't
-implemented your AI yet. Clicking on OK starts the game.
+implemented your AI yet. Clicking on `OK` starts the game.
 
 A human-controlled player makes a move by double-clicking an empty
 square on the grid. Not all squares constitute valid moves; the mouse
@@ -86,7 +86,7 @@ computer simply moves when it is its turn. The GUI animates the placing
 and flipping of tiles, so that you can see the moves in action. Status
 messages display the score and remind you whose move it is.
 
-***Some necessary terminology***
+### Some necessary terminology
 
 You will be building a rudimentary *artificial intelligence* based on
 the knowledge you have learned in this class so that the computer can
@@ -101,9 +101,9 @@ There are three main abstractions that you need to understand in order
 to write the code required for this project:
 
 1.  The contents of each grid cell are represented by the
-    enumeration OthelloCell, which has three possible
-    values: OthelloCell.NONE (for an empty cell), OthelloCell.BLACK (for
-    a cell containing a black tile) and OthelloCell.WHITE (for a cell
+    enumeration `OthelloCell`, which has three possible
+    values: `OthelloCell.NONE` (for an empty cell), `OthelloCell.BLACK` (for
+    a cell containing a black tile) and `OthelloCell.WHITE` (for a cell
     containing a white tile). The cells' locations are denoted by
     ordered pairs (*r*, *c*), where *r* is the row and *c* is the
     column. As is customary with two-dimensional arrays in Java, the row
@@ -120,14 +120,14 @@ to write the code required for this project:
 3.  Since it's possible to have two AI's playing against each other, it
     makes sense to encapsulate the AI into a class, so that two objects
     of that class could be created and play against one another. You
-    implement your AI in a class that implements the OthelloAI
-    interface, which consists of a method called chooseMove() that
+    implement your AI in a class that implements the `OthelloAI`
+    interface, which consists of a method called `chooseMove()` that
     analyzes all of the possible moves and picks the AI's next move.
     Since a move is denoted by the square in which a new tile should be
-    placed, chooseMove() returns an object of type OthelloMove, which
+    placed, `chooseMove()` returns an object of type `OthelloMove`, which
     contains a row number and column number.
 
-***Game trees***
+### Game trees
 
 You can think of the possible game states as being arranged,
 conceptually, in a kind of search tree called a *game tree*. Each node
@@ -165,7 +165,7 @@ the game. Since there are no legal moves on these boards, the nodes
 representing them will have no children; so, final states are leaves of
 the game tree.
 
-***Exhaustively searching all possibilities***
+### Exhaustively searching all possibilities
 
 Each time a player chooses a move, s/he wants to pick the one that will
 lead to a winning game state. Assuming you had the complete game tree at
@@ -200,7 +200,7 @@ So, you'll need to find a compromise, an approach that perhaps doesn't
 always find the best possible outcome, but that makes a good decision in
 a reasonable amount of time while using a reasonable amount of memory.
 
-***Heuristic search***
+### Heuristic search
 
 The study of artificial intelligence has much to say about good ways to
 search toward a goal when it's impractical to check all possible paths
@@ -249,57 +249,35 @@ Putting these ideas together, we can develop a search algorithm that
 will look for the move that leads to the game state that evaluates to
 the highest value. That algorithm looks like this:
 
-int search(OthelloGameState s, int depth)
+    int search(OthelloGameState s, int depth)
+    {
+        if (depth == 0 or reached a final state)
+            return evaluation of s
+        else
+        {
+            if (it's my turn to move)
+            {
+                for each valid move that I can make from s
+                {
+                    make that move on s yielding a state s'
+                    search(s', depth - 1)
+                }
 
-{
+                return the maximum value returned from recursive search calls
+            }
+            else
+            {
+                for each valid move that my opponent can make from s
+                {
+                    make that move on s yielding a state s'
+                    search(s', depth - 1)
+                }
 
-if (depth == 0 or reached a final state)
+                return the minimum value returned from recursive search calls
+            }
+        }
+    }
 
-return evaluation of s
-
-else
-
-{
-
-if (it\'s my turn to move)
-
-{
-
-for each valid move that I can make from s
-
-{
-
-make that move on s yielding a state s\'
-
-search(s\', depth - 1)
-
-}
-
-return the *maximum* value returned from recursive search calls
-
-}
-
-else
-
-{
-
-for each valid move that my opponent can make from s
-
-{
-
-make that move on s yielding a state s\'
-
-search(s\', depth - 1)
-
-}
-
-return the *minimum* value returned from recursive search calls
-
-}
-
-}
-
-}
 
 There are a few things we need to discuss about this algorithm. First,
 notice that there are two cases of recursion: either it is the computer
