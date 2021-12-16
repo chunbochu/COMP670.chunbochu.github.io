@@ -447,14 +447,14 @@ There are three deliverables to turn in for your AI Game Project.
 1.  AI Game Project Part 1\
     You should submit a description report of the design of your
     AI in this assignment. Provide answers to the following questions:
-    a.  Do you use the default evaluation function? If not, what is your
+    -  Do you use the default evaluation function? If not, what is your
         evaluation function and what heuristic is it based on?
 
-    b.  How will you implement the search algorithm?
+    -  How will you implement the search algorithm?
 
-    c.  Is your depth parameter dynamically adjusted?
+    -  Is your depth parameter dynamically adjusted?
 
-    d.  What subtasks have your team decided to work on and who is
+    -  What subtasks have your team decided to work on and who is
         responsible for each subtask? (You can make a to-do-list with
         names to track the progress. Check marks can be easily added as
         your team make progress.)
