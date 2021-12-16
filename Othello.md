@@ -10,11 +10,10 @@ that implements the rules of the game) that will allow two human players
 to play the game. You will write the search and strategy routines that
 will allow the computer to play the game.
 
-Othello ---also known as Reversi ---is played on a square board divided
+Othello. also known as Reversi, is played on a square board divided
 into an 8×8 grid. The rules of the game, along with some good ideas for
 a sound strategy of play, are described in the [Wikipedia entry on
-Reversi](http://en.wikipedia.org/wiki/Reversi)---do
-read it!
+Reversi](http://en.wikipedia.org/wiki/Reversi). Do read it!
 
 Be sure you know how to play the game before attempting to complete this
 program; it will save you much time and effort. Since the provided
@@ -463,16 +462,12 @@ There are three deliverables to turn in for your AI Game Project.
     You should submit a complete project report including a
     testing plan in this assignment. Provide answers to the following
     questions:
-
-       a.  What are the major challenges you have encountered? How did you
+    -  What are the major challenges you have encountered? How did you
         solve them?
-
-       b.  Which subtask takes the most time to complete? Why?
-
-       c.  How did you conduct test and modified your AI based on the
+    -  Which subtask takes the most time to complete? Why?
+    -  How did you conduct test and modified your AI based on the
         results? Document each step and action you take.
-
-       d.  Has every team member contributed fairly by completing the
+    -  Has every team member contributed fairly by completing the
         subtasks assigned to him/her?
 
     Also turn in only the Java file containing your AI class, (which will
