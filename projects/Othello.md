@@ -143,8 +143,8 @@ permitted to make at the opening. (All other moves are illegal and, as
 such, are not to be considered.)
 
 Take a look at this partial Othello game tree:
-![Othello game trees](othello-game-trees.jpeg){width="5.260416666666667in"
-height="2.7743055555555554in"}
+
+![Othello game trees](othello-game-trees.jpeg)
 
 From the initial state, the root of the tree, there are four
 possibilities from which the black player can choose its initial move,
