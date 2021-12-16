@@ -12,8 +12,8 @@ will allow the computer to play the game.
 
 Othello ---also known as Reversi ---is played on a square board divided
 into an 8×8 grid. The rules of the game, along with some good ideas for
-a sound strategy of play, are described in the [[Wikipedia entry on
-Reversi] (http://en.wikipedia.org/wiki/Reversi)]---do
+a sound strategy of play, are described in the [Wikipedia entry on
+Reversi] (http://en.wikipedia.org/wiki/Reversi)---do
 read it!
 
 Be sure you know how to play the game before attempting to complete this
@@ -39,9 +39,9 @@ To import this project to your Eclipse workspace,
 
 1.  Unzip the starter file.
 2.  Start eclipse and select your workspace.
-3.  From the file menu, select Import\..., which will pop up a dialog
-    box. under General, select Existing projects into workspace, then
-    click Next \>.
+3.  From the file menu, select `Import\...`, which will pop up a dialog
+    box. under `General`, select Existing projects into workspace, then
+    click `Next >`.
 4.  Next to Select root directory, click the Browse button. Find the
     COMP670-Othello folder that you just unzipped the starter into,
     select it, then click OK.
