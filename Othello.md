@@ -294,11 +294,11 @@ turn. In each case, the algorithm is almost the same, except:
     computer's *worst* interest.
 
 Either the black or the white player (or both!) might be a computer
-player. So, when deciding whether it\'s "my turn" or "my opponent's
+player. So, when deciding whether it's "my turn" or "my opponent's
 turn," you'll have to exercise some caution to ensure that you're making
 the right decision.
 
-Second, notice the depth parameter, used to limit the depth of our
+Second, notice the `depth` parameter, used to limit the depth of our
 search, to make sure that our search is of a manageable length. Each
 time we recurse one level deeper, the depth is reduced by one, and we
 stop recursing when it reaches zero.
@@ -323,12 +323,12 @@ information.
 Lastly, note that this algorithm returns the *evaluation* of the best
 move for state *s*, not the best state itself; nor does it return the
 evaluation for some other state reachable from *s* (for example, for one
-of the *s\'* states). Calling search(*s*, 10) for some state *s* asks
-the following question: \"Looking ten moves into the future, and
+of the *s\'* states). Calling `search(*s*, 10)` for some state *s* asks
+the following question: "Looking ten moves into the future, and
 assuming I and my opponent do the best we can do, how well will the
-state *s* turn out for me?\" You'll need to exercise some care in
-actually implementing this algorithm so that chooseMove() will be able
-to call search() and use the result to help it choose the right move.
+state *s* turn out for me?" You'll need to exercise some care in
+actually implementing this algorithm so that `chooseMove()` will be able
+to call `search()` and use the result to help it choose the right move.
 
 Be sure to test your program for correct play and reasonable play; a
 good way to do so is to play against your own program (or have friends
@@ -339,21 +339,21 @@ depth until it does better. You may also wish to change the evaluation
 function or the game tree search algorithm, as discussed in Optional
 Work, below.
 
-***A Couple of Technical Points***
+### A Couple of Technical Points
 
--   Your OthelloAI_Team# class must not write to System.out or otherwise
+-   Your `OthelloAI_XXX` class must not write to `System.out` or otherwise
     write to the console. Doing so would certainly confuse a game
     player, who is supposed to be interacting only with the Othello
-    board. If you wish to use System.out statements while debugging your
+    board. If you wish to use `System.out` statements while debugging your
     work, that's fine, but be sure to comment them out (or remove them)
     before turning in your work.
 
 -   I do not require you to use additional classes to support your
-    OthelloAI_Team# class, but if you choose to do so, *make them inner
+       `OthelloAI_XXX` class, but if you choose to do so, *make them inner
     classes*. This isolates those additional classes from the rest of
     the program, which, of course, has no need to "see" them.
 
-***Optional Work***
+### <span style="color:red">Optional Work</span>
 
 *Modify your evaluation function.* The core of your AI---what will set
 it apart from others---is the evaluation function it uses to decide how
