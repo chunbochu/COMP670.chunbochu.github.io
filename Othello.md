@@ -422,8 +422,10 @@ the last week. The rules we will use are as follows:
     it is when you start the move:
 
 -   `long startTime = System.currentTimeMillis();`
+   
     As you evaluate that move, check the time again every so often:
     `long endTime = System.currentTimeMillis();`
+    
     and subtract the startTime from the endTime. When the time approaches
     5 seconds, terminate your evaluation, and make the move.
 
@@ -442,7 +444,7 @@ Good luck!
 
 There are three deliverables to turn in for your AI Game Project.
 
-1.  AI Game Project Part 1
+1.  AI Game Project Part 1\
     You should submit a description report of the design of your
     AI in this assignment. Provide answers to the following questions:
 
@@ -458,7 +460,7 @@ There are three deliverables to turn in for your AI Game Project.
         names to track the progress. Check marks can be easily added as
         your team make progress.)
 
-2.  AI Game Project Part 2
+2.  AI Game Project Part 2\
     You should submit a complete project report including a
     testing plan in this assignment. Provide answers to the following
     questions:
@@ -480,6 +482,6 @@ There are three deliverables to turn in for your AI Game Project.
     number is 1. Do not turn in any of the other files provided to
     you. *Do not ZIP up or otherwise archive these files.*
 
-3.  AI Game Project Demo
+3.  AI Game Project Demo\
     We will have a tournament in the last class to demonstrate your AI
     implementation, have fun and celebrate your achievement.
