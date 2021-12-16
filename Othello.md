@@ -455,7 +455,7 @@ There are three deliverables to turn in for your AI Game Project.
 
      c.  Is your depth parameter dynamically adjusted?
 
-     d.  What subtasks have your team decided to work on and who is
+     [//]: # d.  What subtasks have your team decided to work on and who is
         responsible for each subtask? (You can make a to-do-list with
         names to track the progress. Check marks can be easily added as
         your team make progress.)
