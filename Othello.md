@@ -393,10 +393,9 @@ Again, write up your results and your conclusions as comments in your
 Othello AI class and in your final report. Be sure to tell me which
 strategy worked best and why you think it did.
 
-***A Tournament***
+### Demo/Tournament
 
-After this project's due date has passed, we will gather all your AIs
-together and run a demo tournament to determine who has the best one in
+We will gather all your AIs together and run a demo tournament to determine who has the best one in
 the last week. The rules we will use are as follows:
 
 -   Each AI will play two games against each other AI, one as black and
@@ -414,7 +413,7 @@ the last week. The rules we will use are as follows:
 -   Your AI will be given 5 seconds of CPU time to choose each of its
     moves. Java has a few different library classes that can help you
     time how long it takes to make a move. Using
-    the System.currentTimeMillis( ) method provides an easy way. It
+    the `System.currentTimeMillis()` method provides an easy way. It
     returns the current date and time, measured to the nearest
     millisecond, and reported as the number of elapsed milliseconds
     since midnight, January 1, 1970 (sometimes referred to as the "Unix
@@ -422,14 +421,11 @@ the last week. The rules we will use are as follows:
     measured time). To measure how long a move takes, remember what time
     it is when you start the move:
 
--   long startTime = System.currentTimeMillis();
-
-> As you evaluate that move, check the time again every so often:
->
-> long endTime = System.currentTimeMillis();
->
-> and subtract the startTime from the endTime. When the time approaches
-> 5 seconds, terminate your evaluation, and make the move.
+-   `long startTime = System.currentTimeMillis();`
+    As you evaluate that move, check the time again every so often:
+    `long endTime = System.currentTimeMillis();`
+    and subtract the startTime from the endTime. When the time approaches
+    5 seconds, terminate your evaluation, and make the move.
 
 -   If your AI does not compile, takes too long to make a move, returns
     null, throws an exception, isn't named according to the naming
@@ -442,12 +438,12 @@ you can.
 
 Good luck!
 
-***Deliverables***
+### Deliverables
 
 There are three deliverables to turn in for your AI Game Project.
 
-1.  AI Game Project Part 1\
-    Your team should submit a description report of the design of your
+1.  AI Game Project Part 1
+    You should submit a description report of the design of your
     AI in this assignment. Provide answers to the following questions:
 
     a.  Do you use the default evaluation function? If not, what is your
@@ -462,8 +458,8 @@ There are three deliverables to turn in for your AI Game Project.
         names to track the progress. Check marks can be easily added as
         your team make progress.)
 
-2.  AI Game Project Part 2\
-    Your team should submit a complete project report including a
+2.  AI Game Project Part 2
+    You should submit a complete project report including a
     testing plan in this assignment. Provide answers to the following
     questions:
 
@@ -478,12 +474,12 @@ There are three deliverables to turn in for your AI Game Project.
     d.  Has every team member contributed fairly by completing the
         subtasks assigned to him/her?
 
-> Also turn in only the Java file containing your AI class, (which will
-> include any additional inner classes you created, if any); for
-> example, turn in the file named OthelloAI_Team1.java if your Team
-> number is 1. Do not turn in any of the other files provided to
-> you. *Do not ZIP up or otherwise archive these files.*
+    Also turn in only the Java file containing your AI class, (which will
+    include any additional inner classes you created, if any); for
+    example, turn in the file named `OthelloAI_Team1.java` if your Team
+    number is 1. Do not turn in any of the other files provided to
+    you. *Do not ZIP up or otherwise archive these files.*
 
-3.  AI Game Project Demo\
+3.  AI Game Project Demo
     We will have a tournament in the last class to demonstrate your AI
     implementation, have fun and celebrate your achievement.
