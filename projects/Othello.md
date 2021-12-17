@@ -39,7 +39,7 @@ To import this project to your Eclipse workspace,
 1.  Unzip the starter file.
 2.  Start eclipse and select your workspace.
 3.  From the file menu, select `Import...`, which will pop up a dialog
-    box. under `General`, select Existing projects into workspace, then
+    box. Under `General`, select `Existing projects into workspace`, then
     click `Next >`.
 4.  Next to `Select root directory`, click the `Browse` button. Find the
     COMP670-Othello folder that you just unzipped the starter into,
@@ -49,7 +49,7 @@ To import this project to your Eclipse workspace,
     may show some warnings; each of these warnings indicates that there
     is a part of the program that has yet to be built.
 
-You will only need to work on two classes. First, you need to create a
+**You will only need to work on __two classes__**. First, you need to create a
 new class that implements the `OthelloAI` interface. Your class'
 name *must begin with `OthelloAI_`, followed by your `full name`.* So, if your
 name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
