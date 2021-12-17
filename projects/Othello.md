@@ -1,4 +1,4 @@
-# COMP 670 AI Game Project, Summer 2021
+# COMP 670 AI Game Project
 ## Othello Game
 
 ### Introduction
