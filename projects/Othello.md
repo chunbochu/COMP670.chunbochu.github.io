@@ -322,7 +322,7 @@ information.
 Lastly, note that this algorithm returns the *evaluation* of the best
 move for state *s*, not the best state itself; nor does it return the
 evaluation for some other state reachable from *s* (for example, for one
-of the *s\'* states). Calling `search(*s*, 10)` for some state *s* asks
+of the *s\'* states). Calling `search(s, 10)` for some state *s* asks
 the following question: "Looking ten moves into the future, and
 assuming I and my opponent do the best we can do, how well will the
 state *s* turn out for me?" You'll need to exercise some care in
