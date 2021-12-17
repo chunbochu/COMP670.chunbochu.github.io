@@ -194,7 +194,6 @@ particular state, the number of nodes in the tree would be greater than
 enough memory available to store the tree, the processing time to create
 the entire game tree would be prohibitive.
 
-
 So, you'll need to find a compromise, an approach that perhaps doesn't
 always find the best possible outcome, but that makes a good decision in
 a reasonable amount of time while using a reasonable amount of memory.
@@ -352,8 +351,8 @@ Work, below.
     classes*. This isolates those additional classes from the rest of
     the program, which, of course, has no need to "see" them.
 
-### <span style="color:red">Optional Work</span>
-
+### Optional Work
+    =============
 *Modify your evaluation function.* The core of your AI---what will set
 it apart from others---is the evaluation function it uses to decide how
 "good" each board configuration is. My evaluation function may not
