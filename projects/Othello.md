@@ -194,6 +194,10 @@ particular state, the number of nodes in the tree would be greater than
 enough memory available to store the tree, the processing time to create
 the entire game tree would be prohibitive.
 
+<math>
+	H(s) = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup> h(t) dt
+</math>
+
 So, you'll need to find a compromise, an approach that perhaps doesn't
 always find the best possible outcome, but that makes a good decision in
 a reasonable amount of time while using a reasonable amount of memory.
