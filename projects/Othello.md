@@ -190,13 +190,10 @@ particular game state. There simply won't be enough memory to store the
 entire game tree. (You can imagine that, if you build the game tree 20
 levels deep, and there are four possible moves that can be made from any
 particular state, the number of nodes in the tree would be greater than
-4^20^, which is a very large number indeed!) Besides, even if there were
+<math>4<sup>20</sup></math>, which is a very large number indeed!) Besides, even if there were
 enough memory available to store the tree, the processing time to create
 the entire game tree would be prohibitive.
 
-<math>
-	H(s) = ∫<sub>0</sub><sup>∞</sup> e<sup>-st</sup> h(t) dt
-</math>
 
 So, you'll need to find a compromise, an approach that perhaps doesn't
 always find the best possible outcome, but that makes a good decision in
