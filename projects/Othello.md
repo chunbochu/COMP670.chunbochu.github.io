@@ -38,7 +38,7 @@ To import this project to your Eclipse workspace,
 
 1.  Unzip the starter file.
 2.  Start eclipse and select your workspace.
-3.  From the file menu, select `Import\...`, which will pop up a dialog
+3.  From the file menu, select `Import...`, which will pop up a dialog
     box. under `General`, select Existing projects into workspace, then
     click `Next >`.
 4.  Next to `Select root directory`, click the `Browse` button. Find the
