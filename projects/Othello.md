@@ -351,8 +351,8 @@ Work, below.
     classes*. This isolates those additional classes from the rest of
     the program, which, of course, has no need to "see" them.
 
-### Optional Work
-    =============
+## Optional Work
+   =============
 *Modify your evaluation function.* The core of your AI---what will set
 it apart from others---is the evaluation function it uses to decide how
 "good" each board configuration is. My evaluation function may not
