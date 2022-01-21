@@ -37,16 +37,16 @@ project is ready to be imported in Eclipse.
 
 To import this project to your Eclipse workspace,
 
-1.  Unzip the starter file.
+1.  Unzip the starter COMP670-Othello-Student-Individual.zip file into a new folder.
 2.  Start eclipse and select your workspace.
 3.  From the file menu, select `Import...`, which will pop up a dialog
     box. Under `General`, select `Existing projects into workspace`, then
     click `Next >`.
 4.  Next to `Select root directory`, click the `Browse` button. Find the
-    COMP670-Othello folder that you just unzipped the starter into,
+    folder that you just unzipped the starter into in Step 1,
     select it, then click `OK`.
 5.  Finally, click `Finish`. You should now see a project
-    called `COMP670-Othello` in the Package Explorer. Your Problems window
+    called `COMP670-Othello-Student-Individual` in the Package Explorer. Your Problems window
     may show some warnings; each of these warnings indicates that there
     is a part of the program that has yet to be built.
 
