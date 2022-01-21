@@ -52,7 +52,7 @@ To import this project to your Eclipse workspace,
 
 **You will only need to work on __two classes__**. First, you need to create a
 new class that implements the `OthelloAI` interface. Your class'
-name *must begin with `OthelloAI_`, followed by your `full name`.* So, if your
+name *must begin with `OthelloAI_`, followed by your `full_name`.* So, if your
 name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
 
 Second, you write one line of code in the `OthelloAIFactory` class; see
