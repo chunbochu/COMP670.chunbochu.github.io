@@ -26,7 +26,8 @@ code (see below).
 ### Starting Point
 
 All the code that you'll need to complete the assignment is included in
-the COMP670-Othello.zip file; download the file, unzip it, and import to
+the [COMP670-Othello-Student-Individual.zip](COMP670-Othello-Student-Individual.zip); 
+download the file, unzip it, and import to
 your preferred IDE. Much of the code is provided in compiled class
 files, in the lib folder. The provided Java source code (.java) files
 are heavily commented.
