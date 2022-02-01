@@ -452,10 +452,7 @@ There are three deliverables to turn in for your AI Game Project.
 
     -  Is your depth parameter dynamically adjusted?
 
-    -  What subtasks have your team decided to work on and who is
-        responsible for each subtask? (You can make a to-do-list with
-        names to track the progress. Check marks can be easily added as
-        your team make progress.)
+    -  If you have a different strategy than what is provided, please describe it in details how it works.
 
 2.  AI Game Project Part 2\
     You should submit a complete project report including a
@@ -466,13 +463,12 @@ There are three deliverables to turn in for your AI Game Project.
     -  Which subtask takes the most time to complete? Why?
     -  How did you conduct test and modified your AI based on the
         results? Document each step and action you take.
-    -  Has every team member contributed fairly by completing the
-        subtasks assigned to him/her?
+    -  How do you compare your strategy to the minimax algorithm we've learnt in class? What improvements/advantages your strategy has?
 
     Also turn in only the Java file containing your AI class, (which will
     include any additional inner classes you created, if any); for
-    example, turn in the file named `OthelloAI_Team1.java` if your Team
-    number is 1. Do not turn in any of the other files provided to
+    example, turn in the file named `OthelloAI_Johnn_Smith.java` if your name
+    is John Smith. Do not turn in any of the other files provided to
     you. *Do not ZIP up or otherwise archive these files.*
 
 3.  AI Game Project Demo\
