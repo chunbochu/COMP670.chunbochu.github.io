@@ -13,11 +13,11 @@ There are a few questions in this document like the followng:
 ```diff
 - This is a question.
 ```
-Download the [program](ca.m). You need to read and understand the program. Prepare a document with your answers to these questions.
+Download the simulation [program](ca.m). You need to read and understand the program. Prepare a document with your answers to these questions.
 
 ## Cellular Automaton
 
-The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or Matlab), open ca.m and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable `particlesDensity`.
+The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or Matlab), open the simulation program and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable `particlesDensity`.
 
 <p align="center">
   <img src="ca/CA2.JPG/">
