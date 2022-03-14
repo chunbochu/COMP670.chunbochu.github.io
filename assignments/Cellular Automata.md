@@ -8,9 +8,16 @@ Diffusion-limited aggregation (DLA) is the process whereby particles undergoing 
 
 Figure 1: (left) DLA structure grown from a copper sulfate solution in an electrodeposition cell. (right) Red coral Errina novaezelandiae in the Te Awaatu Marine Reserve in Fiordland.
 
+## Your tasks:
+There are a few questions in this document like the followng:
+```diff
+- This is a question.
+```
+Download the [program](ca.m). You need to read and understand the program. Prepare a document with your answers to these questions.
+
 ## Cellular Automaton
 
-The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or Matlab), open ca.m and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable *particlesDensity*.
+The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or Matlab), open ca.m and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable `particlesDensity`.
 
 <p align="center">
   <img src="ca/CA2.JPG/">
@@ -33,13 +40,15 @@ Answer the following questions:
 - If it's possible, find the deterministic and random components of the motion.
 ```
 
-Try to understand what the code between the tags “Pseudo Brownian motion" and “End" does. The automaton space is divided into blocks of 2x2 cells inside which the position of the particles is updated. At each time step, two random, complementary matrices containing “0" and “1" elements are generated (cw and ccw). 
+Try to understand what the code between the tags `Pseudo Brownian motion` and `End` does. The automaton space is divided into blocks of 2x2 cells inside which the position of the particles is updated. At each time step, two random, complementary matrices containing “0" and “1" elements are generated (cw and ccw). 
 ```diff
 - With your understanding of the code, find and draw the updated position of the particles at time t+1 for the initial configuration of the following 4x4 CA. 
 ```
 <p align="center">
   <img src="ca/CA3.png/">
 </p>
+
+I've created the charts in a [PowerPoint slide](ca/CA_assignment.pptx). You can simplly fill the empty cell(s) and copy it to your sbumission.)
 
 Consider vectors xind =yind = [1, 3] which define the indexes of the upper-left cell of each block, and black cells below to represent particles and/or “1" matrix elements.
 (Hint: only the elements in cw that are defined by xind and yind are used, that are here cw(1, 1), cw(3, 1), cw(1,3), and cw(3,3).)
