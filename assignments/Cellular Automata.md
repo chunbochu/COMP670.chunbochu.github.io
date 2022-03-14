@@ -12,7 +12,7 @@ Figure 1: (left) DLA structure grown from a copper sulfate solution in an electr
 
 The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or Matlab), open ca.m and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable *particlesDensity*.
 
-![image2](ca/CA2.png)
+![image2](ca/CA2.JPG)
 
 Figure 2: First run of ca.m.  The above automaton space is defined by an array of
 40x40 cells. Motionless particles (in blue) are initially present in the environment.
