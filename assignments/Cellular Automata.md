@@ -9,22 +9,24 @@ Diffusion-limited aggregation (DLA) is the process whereby particles undergoing 
 Figure 1: (left) DLA structure grown from a copper sulfate solution in an electrodeposition cell. (right) Red coral Errina novaezelandiae in the Te Awaatu Marine Reserve in Fiordland.
 
 ## Your tasks:
-There are a few questions in this document like the followng:
+
+- Download and install [GNU Octave](https://www.gnu.org/software/octave/). If you have MATLAB, you don't need to do this step.
+- Download the simulation [program](ca.m). 
+There are a few questions in this document marked as:
 ```diff
 - This is a question.
 ```
-Download the simulation [program](ca.m). You need to read and understand the program. Prepare a document with your answers to these questions.
+You need to read and understand the program. Run the simulation as indicated. Prepare a document with your answers to these questions.
 
 ## Cellular Automaton
 
-The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or Matlab), open the simulation program and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable `particlesDensity`.
+The goal of this exercise is to implement a two-dimensional CA that mimics a DLA process. Launch Octave (or MATLAB), open the simulation program and run it.  Have a look at the content of the file to become familiar with the main variables (top part). The automaton space is formed by an array of cells, which size is given by the integer parameters nx and ny. The x-axis represents the vertical axis and the y-axis the horizontal axis.  Motionless, non-interacting particles (blue cells) are initially present in the CA space. Their density can be changed through the variable `particlesDensity`.
 
 <p align="center">
   <img src="ca/CA2.JPG/">
 </p>
 
-Figure 2: First run of ca.m.  The above automaton space is defined by an array of
-40x40 cells. Motionless particles (in blue) are initially present in the environment.
+Figure 2: First run of ca.m.  The above automaton space is defined by an array of `40x40` cells. Motionless particles (in blue) are initially present in the environment.
 
 ## Implementation of a Pseudo Brownian Motion
 
@@ -47,6 +49,7 @@ Try to understand what the code between the tags `Pseudo Brownian motion` and `E
 <p align="center">
   <img src="ca/CA3.png/">
 </p>
+Figure 3: 
 
 I've created the charts in a [PowerPoint slide](ca/CA_assignment.pptx). You can simplly fill the empty cell(s) and copy it to your sbumission.)
 
@@ -78,11 +81,11 @@ The following fillustrates the growth of two trees resulting from two successive
 <p align="center">
   <img src="ca/CA4.png/">
 </p>
-Figure: Growth of Brownian trees using a cellular automaton that mimics a diffusion-limited aggregation (DLA) process. The two different trees are the result of two successive runs of the program (with identical parameter values). Snapshots are taken at time t=500, 2000 and 5000 iterations.
+Figure 4: Growth of Brownian trees using a cellular automaton that mimics a diffusion-limited aggregation (DLA) process. The two different trees are the result of two successive runs of the program (with identical parameter values). Snapshots are taken at time t=500, 2000 and 5000 iterations.
 
 Have a look at the structure of the following tree. 
 ```diff
-- What distinct it from the two ones displayed in Figure 7 (t=5000)?
+- What distincts it from the two ones displayed in Figure 7 (t=5000)?
 - Try different values for the parameter responsible of this change and observe how it affects the structure of the tree.
 - At which part of the tree does the growth occur mainly?
 - How do you expect the size of a Brownian tree (number of cells that compose it) to vary in function of the time?
