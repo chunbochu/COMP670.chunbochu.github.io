@@ -43,15 +43,17 @@ Answer the following questions:
 ```
 
 Try to understand what the code between the tags `Pseudo Brownian motion` and `End` does. The automaton space is divided into blocks of 2x2 cells inside which the position of the particles is updated. At each time step, two random, complementary matrices containing “0" and “1" elements are generated (cw and ccw). 
+
+With your understanding of the code, do the following task:
 ```diff
-- With your understanding of the code, find and draw the updated position of the particles at time t+1 for the initial configuration of the following 4x4 CA. 
+- Find and draw the updated position of the particles at time t+1 for the initial configuration of the following 4x4 CA. 
 ```
 <p align="center">
   <img src="ca/CA3.png/">
 </p>
 Figure 3: 
 
-I've created the charts in a [PowerPoint slide](ca/CA_assignment.pptx). You can simplly fill the empty cell(s) and copy it to your sbumission.)
+I've created the charts in a [PowerPoint slide](ca/CA_assignment.pptx). You can easily fill the empty cell(s) in CA space(t+1) and copy it to your sbumission.)
 
 Consider vectors xind =yind = [1, 3] which define the indexes of the upper-left cell of each block, and black cells below to represent particles and/or “1" matrix elements.
 (Hint: only the elements in cw that are defined by xind and yind are used, that are here cw(1, 1), cw(3, 1), cw(1,3), and cw(3,3).)
