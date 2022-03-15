@@ -5,8 +5,9 @@ Diffusion-limited aggregation (DLA) is the process whereby particles undergoing 
 
 ![image1](ca/CA1.png)
 
-
+<p align="center">
 Figure 1: (left) DLA structure grown from a copper sulfate solution in an electrodeposition cell. (right) Red coral Errina novaezelandiae in the Te Awaatu Marine Reserve in Fiordland.
+ </p>
 
 ## Your tasks:
 
@@ -26,7 +27,9 @@ The goal of this exercise is to implement a two-dimensional CA that mimics a DLA
   <img src="ca/CA2.JPG/">
 </p>
 
+<p align="center">
 Figure 2: First run of ca.m.  The above automaton space is defined by an array of `40x40` cells. Motionless particles (in blue) are initially present in the environment.
+</p>
 
 ## Implementation of a Pseudo Brownian Motion
 
@@ -51,7 +54,9 @@ With your understanding of the code, do the following task:
 <p align="center">
   <img src="ca/CA3.png/">
 </p>
+<p align="center">
 Figure 3: 
+ </p>
 
 I've created the charts in a [PowerPoint slide](ca/CA_assignment.pptx). You can easily fill the empty cell(s) in CA space(t+1) and copy it to your sbumission.)
 
@@ -83,7 +88,9 @@ The following fillustrates the growth of two trees resulting from two successive
 <p align="center">
   <img src="ca/CA4.png/">
 </p>
+<p align="center">
 Figure 4: Growth of Brownian trees using a cellular automaton that mimics a diffusion-limited aggregation (DLA) process. The two different trees are the result of two successive runs of the program (with identical parameter values). Snapshots are taken at time t=500, 2000 and 5000 iterations.
+</p>
 
 Have a look at the structure of the following tree. 
 ```diff
