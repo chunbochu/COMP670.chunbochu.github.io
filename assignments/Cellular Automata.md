@@ -58,7 +58,7 @@ The colon (:) is one of the most useful operators in MATLAB. It can create vecto
 the vertical coordinates of the upper-left cell of each block. If `s=0`, `xind=[1, 3, 5,...]`.  `yind = 1+s:2:nx-2+s;` creates a vector of 
 the horizontal coordinates of the upper-left cell of each block. Pay attention to the green blocks of 2×2 cells in the CA space.
 
-Consider vectors `xind=yind=[1, 3]` which define the indexes of the upper-left cell of each block (four of them), and black cells below to represent particles and/or “1" matrix elements.
+Consider vectors `xind=yind=[1, 3]` which define the indexes of the upper-left cell of each block (four of them with green edges), and black cells below to represent particles and/or “1" matrix elements.
 (Hint: only the elements in `cw` that are defined by `xind` and `yind` are used. They are: `cw(1, 1)`, `cw(3, 1)`, `cw(1,3)`, and `cw(3,3)`)
 <p align="center">
   <img src="ca/CA3.png/">
