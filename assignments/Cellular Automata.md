@@ -52,12 +52,14 @@ With your understanding of the code, do the following task:
 ```diff
 - Find and draw the updated position of the particles at time t+1 for the initial configuration of the 4X4 CA in Figure 3. 
 ```
-### MATLAB Tip of vectors
-The colon (:) is one of the most useful operators in MATLAB. It can create vectors, subscript arrays, and specify for iterations.
-`x = j:i:k` creates a regularly-spaced vector `x` using `i` as the increment between elements.
+#### Tip of MATLAB vectors
+The colon (:) is one of the most useful operators in MATLAB. It can create vectors, subscript arrays, and specify for iterations. For example,
+`x = j:i:k` creates a regularly-spaced vector `x` using `i` as the increment between elements. In the simulation program, `xind = 1+s:2:nx-2+s;` creates a vector of 
+the vertical coordinates of the upper-left cell of each block. If `s=0`, `xind=[1, 3, 5,...]`.  `yind = 1+s:2:nx-2+s;` creates a vector of 
+the horizontal coordinates of the upper-left cell of each block. Pay attention to the green blocks of 2×2 cells in the CA space.
 
-Consider vectors `xind=yind=[1, 3]` which define the indexes of the upper-left cell of each block, and black cells below to represent particles and/or “1" matrix elements.
-(Hint: only the elements in `cw` that are defined by `xind` and `yind` are used, that are here `cw(1, 1)`, `cw(3, 1)`, `cw(1,3)`, and `cw(3,3)`)
+Consider vectors `xind=yind=[1, 3]` which define the indexes of the upper-left cell of each block (four of them), and black cells below to represent particles and/or “1" matrix elements.
+(Hint: only the elements in `cw` that are defined by `xind` and `yind` are used. They are: `cw(1, 1)`, `cw(3, 1)`, `cw(1,3)`, and `cw(3,3)`)
 <p align="center">
   <img src="ca/CA3.png/">
 </p>
