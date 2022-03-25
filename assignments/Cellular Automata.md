@@ -12,7 +12,7 @@ Figure 1: (left) DLA structure grown from a copper sulfate solution in an electr
 ## Your tasks:
 
 - Download and install [GNU Octave](https://www.gnu.org/software/octave/). If you have MATLAB, you don't need to do this step.
-- Download the simulation [program](ca.m) written in MATLAB.
+- Download the [simulation program](ca.m) written in MATLAB.
 
 There are a few questions in this document marked as:
 ```diff
@@ -63,13 +63,13 @@ The three dots '...' tell matlab that the code on a given line continues on the 
 Consider vectors `xind=yind=[1, 3]` which define the indexes of the upper-left cell of each block (four of them with green edges). Black cells in the CA space represent particles.  Black cells in  `cw` and `ccw` represent “1" matrix elements.
 (Hint: only the elements in `cw` that are defined by `xind` and `yind` are used. They are: `cw(1, 1)`, `cw(3, 1)`, `cw(1, 3)`, and `cw(3, 3)`)
 <p align="center">
-  <img src="ca/CA3.png/">
+  <img src="ca/COMP 670 CA cells.png/">
 </p>
 <p align="center">
 Figure 3: 
  </p>
 
-I've created the charts in a [PowerPoint slide](ca/CA_assignment.pptx). You can easily fill the empty cell(s) in CA space(t+1) and copy it to your sbumission.
+I've created the charts in a [draw.io file](ca/COMP%20670%20CA%20cells.drawio). You can open it at [draw.io](https://app.diagrams.net/) and fill the empty cell(s) in CA space(t+1). Then export your solution as PNG and copy it to your Word or PDF file for submission.
 
 
 
