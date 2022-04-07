@@ -7,3 +7,7 @@
     - Chapter 1, Introduction to Chatbots and the Rasa Framework
     - Chapter 2, Natural Language Understanding in Rasa
     - Chapter 3, Rasa Core
+## Rasa server
+We have created a server with Rasa Core and Rasa X installed. You can build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to access it.
+
+## Deliverables
