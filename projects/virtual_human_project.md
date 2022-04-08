@@ -10,4 +10,11 @@
 ## Rasa server
 We have created a server with Rasa Core and Rasa X installed. You can build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to access it.
 
-## Deliverables
+## Tasks and Deliverables
+### Task 1: Tooling and Basic NLP knowledge
+By end of Week 2: your team should complelte the following:
+  - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
+  - log in to the Rasa server
+  - create and train a default bot
+  - explore the interface and functioinalities of Rasa X
+### Task 2: 
