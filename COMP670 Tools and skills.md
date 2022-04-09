@@ -6,8 +6,8 @@ Required skills:
 - Basic First Order Logic
 
 Preferred skills:
-- Fundamental knowlwdge in probability
-- Basic linear algebra knowlwdge such as vectors, matrix
+- Fundamental knowledge in probability
+- Basic linear algebra knowledge such as vectors, matrix
 
 Software tools:
 - Eclipse and Java
