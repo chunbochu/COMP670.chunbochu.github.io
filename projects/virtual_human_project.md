@@ -1,21 +1,28 @@
 # COMP 670 Virtual Human Project
+## Introduction
+The Virtual Human Project is a team-based hands-on exercise to build a conversational AI assistant (chatbot). AI chatbots are right on the front lines of artificial intelligence and human intelligence. In this project, you will learn a very exciting tool: [Rasa Open Source](https://rasa.com/open-source/) to build your own chatbot. Rasa Open Source supplies the building blocks for creating virtual assistants: Natural Language Understanding, Dialogue Management, and Integrations.
 
-## Recommended readings:
+## Resources
+### Recommended readings/book:
+- [Rasa Learning Center](https://learning.rasa.com/): This is a great place to learn Rasa. Tons of useful resources.
 - [Rasa's Official Documents](https://rasa.com/docs/rasa/)
 - [Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN	1801077053, 9781801077057. This book is free to access via your Franklin account.
-  - You should read *Section 1: The Rasa Framework* to have a good understanding of the fundamentals of the framework. It includes:
+  - This is a good reference book with in-depth coverage. It has some out-of-date information of Rasa though. You should use it along with Rasa's official documents above.
+  - Focus on *Section 1: The Rasa Framework* to have a good understanding of the fundamentals of the framework. It includes:
     - Chapter 1, Introduction to Chatbots and the Rasa Framework
     - Chapter 2, Natural Language Understanding in Rasa
     - Chapter 3, Rasa Core
-## Rasa server
+### Rasa server
 We have created a server with Rasa Core and Rasa X installed. You can build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to access it.
 
 ## Tasks and Deliverables
 ### Task 1: Tooling and Basic NLP knowledge
 By end of Week 2: your team should complelte the following:
   - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
-  - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
-  - log in to the Rasa server
+  - started [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
+  - log in to the Rasa server to get familiar with the development environment
   - create and train a default bot
   - explore the interface and functioinalities of Rasa X
 ### Task 2: 
+By end of Week 2: your team should complelte the following:
+  - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
