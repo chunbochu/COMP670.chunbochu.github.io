@@ -21,3 +21,13 @@ The distinction between dense and sparse features is a technicality: pre-trained
 You don't need to provide both dense and sparse features. You can use pre-trained embeddings, features from your oww training data, or both.
 
 Ref: [Better Intent Classification And Entity Extraction with DIETClassifier Pipeline Optimization](https://botfront.io/blog/better-intent-classification-and-entity-extraction-with-diet-classifier-pipeline-optimization)
+
+
+  ## [Introduction to Rasa X](https://rasa.com/docs/rasa-x/)
+  Rasa X is a tool for Conversation-Driven Development (CDD), the process of listening to your users and using those insights to improve your AI assistant.
+  - Share your assistant with users as soon as possible
+  - Review conversations on a regular basis
+  - Annotate messages and use them as NLU training data
+  - Test that your assistant always behaves as you expect
+  - Track when your assistant fails and measure its improvement
+  - Fix how your assistant handles unsuccessful conversations
