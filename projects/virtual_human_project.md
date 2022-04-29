@@ -1,6 +1,6 @@
 # COMP 670 Virtual Human Project
 ## Introduction
-The Virtual Human Project is a team-based hands-on exercise to build a conversational AI assistant (chatbot). AI chatbots are right on the front lines of artificial intelligence and human intelligence. In this project, you will learn a very exciting tool: [Rasa Open Source](https://rasa.com/open-source/) to build your own chatbot. Rasa Open Source supplies the building blocks for creating virtual assistants: Natural Language Understanding, Dialogue Management, and Integrations.
+The Virtual Human Project is a team-based hands-on exercise to build a conversational AI assistant (chatbot). AI chatbots are right on the front lines of artificial intelligence and human intelligence. In this project, you will learn a very exciting tool: [Rasa Open Source](https://rasa.com/open-source/) to build your own chatbot. Rasa is a popular open source deep learning framework for chatbot. It supplies the building blocks for creating virtual assistants: Natural Language Understanding, Dialogue Management, and Integrations.
 
 ## Resources
 ### Recommended readings/book:
@@ -15,6 +15,14 @@ The Virtual Human Project is a team-based hands-on exercise to build a conversat
 ### Rasa server
 We have created a server with Rasa Core and Rasa X installed. You can build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to access it.
 
+
+## Requirement
+Your team should build a task-oriented chatbot that aims to help users achieve a particular task.
+
+Generally, conversational agents can be classified as *chit-chat bots*, which are chatbots destined for the sole purpose of maintaining a conversation, being interesting, creative or fun, and *task-oriented chatbots* which offer customer support or act as personal assistants, helping users to achieve a certain task.
+Ref: [Chatbot Categories and Their Limitations](https://dzone.com/articles/chatbots-categories-and-their-limitations-1#:~:text=The%20first%20classification%20splits%20the,to%20achieve%20a%20certain%20task.)
+
+
 ## Tasks and Deliverables
 ### Task 1: Tooling and Basic NLP knowledge
 By end of Week 2: your team should complelte the following:
@@ -24,5 +32,7 @@ By end of Week 2: your team should complelte the following:
   - create and train a default bot
   - explore the interface and functioinalities of Rasa X
 ### Task 2: 
-By end of Week 2: your team should complelte the following:
+By end of Week x: your team should complelte the following:
   - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
+  - brainstorm the purpose of your bot, what is the task it's going to accomplish.
+  - compose a report
