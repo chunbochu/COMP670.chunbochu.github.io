@@ -14,6 +14,7 @@ We have created a server with Rasa Core and Rasa X installed. You can build, tra
 ### Task 1: Tooling and Basic NLP knowledge
 By end of Week 2: your team should complelte the following:
   - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
+  - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
   - log in to the Rasa server
   - create and train a default bot
   - explore the interface and functioinalities of Rasa X
