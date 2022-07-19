@@ -36,7 +36,12 @@ By end of Week 2: your team should complelte the following:
   - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
   - explore the interface and functioinalities of Rasa X
 #### How to integrate your bot in your website
- - You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
+Read
+ - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
+ - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
+ 
+You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
+Then do the following:
  - `cd public_html`
  - `nano index.html` and copy the following:
   ```
@@ -57,7 +62,7 @@ By end of Week 2: your team should complelte the following:
       window.WebChat.default(
         {
           customData: { language: "en" },
-          socketUrl: "https://5200.rasa.cs.franklin.edu/",
+          socketUrl: "https://{port}.rasa.cs.franklin.edu/",
 		  //title: "Chunbo's bot",
           // add other props here
 	  initPayload: "Hey Rasa!",
@@ -72,9 +77,16 @@ By end of Week 2: your team should complelte the following:
 </body>
 </html>
   ```
-Note that you must replace `socketUrl: "https://5200.rasa.cs.franklin.edu/"` with your assigned port number.
+Note that you must replace `{port}` in `socketUrl` with your assigned port number.
 - Save the file and exit nano.
-- Start your rasa server.
+- To use the web chat widget, SocketIO channel must be configured by adding the credentials to your `credentials.yml`:
+```
+socketio:
+  user_message_evt: user_uttered
+  bot_message_evt: bot_uttered
+  session_persistence: true/false
+```
+- Start your rasa server: `rasa run --enable-api --debug --cors="*" --port {port}`
 - Open a browser to visit `https://rasa.cs.franklin.edu/~username` to verify the bot is connected.
 
 ### Task 2: 
