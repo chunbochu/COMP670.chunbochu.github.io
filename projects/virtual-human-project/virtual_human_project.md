@@ -35,11 +35,11 @@ By end of Week 2: your team should complelte the following:
   - create and train a default bot
   - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
   - explore the interface and functioinalities of Rasa X
-#### How to integrate your bot in your website
+#### How to integrate the chatbot in your website?
 Review the following docs first:
  - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
  - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
- 
+
 Each team will be assigned a unique port number to run your rasa server on. You must use the assigned port to avoid conflicts with other teams.
 You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
 Then do the following:
@@ -97,7 +97,7 @@ By end of Week x: your team should complelte the following:
   - compose a report
 
 ### Deliverables
-- A zip file including all of your bot training YMAL files: `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
+- A zip file including all of your bot training YAML files: `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
 
 [Measuring success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/)
 
