@@ -35,6 +35,47 @@ By end of Week 2: your team should complelte the following:
   - create and train a default bot
   - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
   - explore the interface and functioinalities of Rasa X
+#### How to integrate your bot in your website
+ - You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
+ - Next, run `nano index.html` and copy the following:
+  ```
+<!doctype html>
+<html>
+<head>
+<title>My Chatbot Page</title>
+</head>
+<body>
+<script>!(function () {
+  let e = document.createElement("script"),
+    t = document.head || document.getElementsByTagName("head")[0];
+  (e.src =
+    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+    // Replace 1.x.x with the version that you want
+    (e.async = !0),
+    (e.onload = () => {
+      window.WebChat.default(
+        {
+          customData: { language: "en" },
+          socketUrl: "https://5200.rasa.cs.franklin.edu/",
+		  //title: "Chunbo's bot",
+          // add other props here
+	  initPayload: "Hey Rasa!",
+		params: {storage: "session"},
+        },
+        null
+      );
+    }),
+    t.insertBefore(e, t.firstChild);
+})();
+</script>
+</body>
+</html>
+  ```
+Note that you must replace `socketUrl: "https://5200.rasa.cs.franklin.edu/"` with your assigned port number.
+- Save the file and exit nano.
+- Start your rasa server.
+- Open a browser to visit `https://rasa.cs.franklin.edu/~username` to verify the bot is connected.
+
 ### Task 2: 
 By end of Week x: your team should complelte the following:
   - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
