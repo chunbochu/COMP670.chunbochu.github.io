@@ -37,7 +37,8 @@ By end of Week 2: your team should complelte the following:
   - explore the interface and functioinalities of Rasa X
 #### How to integrate your bot in your website
  - You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
- - Next, run `nano index.html` and copy the following:
+ - `cd public_html`
+ - `nano index.html` and copy the following:
   ```
 <!doctype html>
 <html>
