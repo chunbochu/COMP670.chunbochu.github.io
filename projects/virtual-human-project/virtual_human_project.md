@@ -36,15 +36,16 @@ By end of Week 2: your team should complelte the following:
   - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
   - explore the interface and functioinalities of Rasa X
 #### How to integrate your bot in your website
-Read
+Review the following docs first:
  - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
  - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
  
+Each team will be assigned a unique port number to run your rasa server on. You must use the assigned port to avoid conflicts with other teams.
 You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
 Then do the following:
  - `cd public_html`
  - `nano index.html` and copy the following:
-  ```
+  ```html
 <!doctype html>
 <html>
 <head>
@@ -80,7 +81,7 @@ Then do the following:
 Note that you must replace `{port}` in `socketUrl` with your assigned port number.
 - Save the file and exit nano.
 - To use the web chat widget, SocketIO channel must be configured by adding the credentials to your `credentials.yml`:
-```
+```yaml
 socketio:
   user_message_evt: user_uttered
   bot_message_evt: bot_uttered
