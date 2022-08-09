@@ -4,10 +4,10 @@ The Virtual Human Project is a team-based hands-on exercise to build a conversat
 
 ## Resources
 ### Recommended readings/book:
-- [Rasa Learning Center](https://learning.rasa.com/): This is a great place to learn Rasa. Tons of useful resources. Docs are updated to Rasa 3.x
+- [Rasa Learning Center](https://learning.rasa.com/): This is a great place to learn Rasa. Tons of useful resources and videos. Docs are updated to Rasa 3.x
 - [Rasa's Official Documents](https://rasa.com/docs/rasa/)
 - [Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN	1801077053, 9781801077057. This book is free to access via your Franklin account.
-  - This is a good reference book with in-depth coverage. It has some out-of-date information of Rasa though. You should use it along with Rasa's official documents above.
+  - This is a good reference book with in-depth coverage. However, it has some out-of-date information of earlier versions of Rasa. You should use it along with Rasa's official documents above.
   - Focus on *Section 1: The Rasa Framework* to have a good understanding of the fundamentals of the framework. It includes:
     - Chapter 1, Introduction to Chatbots and the Rasa Framework
     - Chapter 2, Natural Language Understanding in Rasa
@@ -27,7 +27,7 @@ Your team will use Rasa Open Source to build a non-trivial, task-oriented chatbo
 
 
 ## Tasks and Deliverables
-### Task 1: Tooling and Basic NLP knowledge
+### Task 1: Team Formation, Tooling and Basic NLP knowledge
 By end of Week 2: your team should complelte the following:
   - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
   - started [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
