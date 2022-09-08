@@ -32,9 +32,19 @@ Your team should complelte the following:
   - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
   - started [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
   - log in to the Rasa server to get familiar with the development environment
-  - create and train a default bot
-  - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
+  - create and train a default bot (see below)
+  - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required (see below)
   - explore the interface and functioinalities of Rasa X
+
+#### How to create and train a default bot?
+In your home directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files. 
+
+Next, run `rasa train` to train your initial bot. It may take a few minutes.
+
+When the training finishes, run `rasa shell` to load your trained model. You talk to your assistant on the command line.
+
+See more about [Command Line Interface](https://rasa.com/docs/rasa/command-line-interface).
+
 #### How to integrate the chatbot in your website?
 Review the following docs first:
  - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
@@ -100,7 +110,11 @@ Your team should complelte the following:
 Your team should complelte the following:
   - regularly review and tag conversation data via Rasa X
   - develop your own application server if needed
-  - constatnly train and test your bot
+  - constantly train and test your bot
+  - Review the following:
+	  - [Conversation-Driven Development](https://rasa.com/docs/rasa/conversation-driven-development)
+	  - [Testing Your Assistant](https://rasa.com/docs/rasa/testing-your-assistant)
+	  - [Setting up CI/CD](https://rasa.com/docs/rasa/setting-up-ci-cd)
  
 ### Task 4:
 Your team should complelte the following:
@@ -117,5 +131,5 @@ It won't be surprising to anyone who's built an AI assistant that measuring succ
 ### Task 5:
 Your team should complelte the following:
 - Submit a final report
-- Submit the folliwing deliverables
+- Submit the following deliverables
 	- A zip file including all of your bot training YAML files: `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
