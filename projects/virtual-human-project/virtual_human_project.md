@@ -28,7 +28,7 @@ Your team will use Rasa Open Source to build a non-trivial, task-oriented chatbo
 
 ## Tasks and Deliverables
 ### Task 1: Team Formation, Tooling and Basic NLP knowledge
-By end of Week 2: your team should complelte the following:
+Your team should complelte the following:
   - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
   - started [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
   - log in to the Rasa server to get familiar with the development environment
@@ -91,18 +91,31 @@ socketio:
 - Open a browser to visit `https://rasa.cs.franklin.edu/~username` to verify the bot is connected.
 
 ### Task 2: 
-By end of Week x: your team should complelte the following:
+Your team should complelte the following:
   - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
-  - brainstorm the purpose of your bot, what is the task it's going to accomplish.
-  - compose a report
+  - brainstorm the purpose of your bot, the task it is going to accomplish, the domain knowledge it has, external data source/API may be needed; etc.
+  - compose a report to submit.
 
-### Deliverables
-- A zip file including all of your bot training YAML files: `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
+### Task 3:
+Your team should complelte the following:
+  - regularly review and tag conversation data via Rasa X
+  - develop your own application server if needed
+  - constatnly train and test your bot
+ 
+### Task 4:
+Your team should complelte the following:
+  - identify at least one Virtual Human agent deployed by other teams
+  - interact with the agent and evaluate its performance
 
-[Measuring success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/)
-
+Read how to [Measuring success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/)
 It won't be surprising to anyone who's built an AI assistant that measuring success can be subjective. Success can mean a lot of different things:
 - Did the assistant correctly classify a message's intent and extract the right entities?
 - Was the right response selected?
 - Was the user's sentiment positive?
 - Did the assistant help the user achieve their goal?
+
+### Task 5:
+Your team should complelte the following:
+- Submit a final report
+- Submit the folliwing deliverables
+	- A zip file including all of your bot training YAML files: `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
