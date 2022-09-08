@@ -36,6 +36,8 @@ Your team should complelte the following:
   - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required (see below)
   - explore the interface and functioinalities of Rasa X
 
+There are many resources on creating chatbots with Rasa. [Building a Chatbot with Rasa](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324) may help you get started.
+
 #### How to create and train a default bot?
 In your home directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files. 
 
