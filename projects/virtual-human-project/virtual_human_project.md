@@ -15,6 +15,12 @@ The Virtual Human Project is a team-based hands-on exercise to build a conversat
 ### Rasa server
 We have created a server with Rasa Core and Rasa X installed. You can build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to create your bot on it.
 
+You will drop to your default home directory after logging in with your individual account. You should run
+ `cd /opt/bots/<team[1|2|...]>` to switch to your team directory. You bot should be created, trained and maintained there.
+A unique port number will be assigned to each team by your professor in class. Please only run your Rasa server on that port to avoid conflicts.
+
+Please do not create a bot in your own home directory.
+
 
 ## Project Requirements
 
