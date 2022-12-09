@@ -24,7 +24,7 @@ you create your AI class and write the necessary OthelloAIFactory class
 code (see below).
 
 ### Starting Point
-
+<!-- the following is deprecated
 All the code that you'll need to complete the assignment is included in
 the [COMP670-Othello-Student-Individual.zip](COMP670-Othello-Student-Individual.zip); 
 download the file, unzip it, and import to
@@ -49,7 +49,28 @@ To import this project to your Eclipse workspace,
     called `COMP670-Othello-Student-Individual` in the Package Explorer. Your Problems window
     may show some warnings; each of these warnings indicates that there
     is a part of the program that has yet to be built.
+-->
 
+All the code that you'll need to complete the assignment is included in
+the [COMP670-Othello-Student-Individual-VSCode.zip](COMP670-Othello-Student-Individual-VSCode.zip); 
+download the file, unzip it, and import to
+your preferred IDE. Much of the code is provided in compiled class
+files, in the jar file in the `lib` folder. The provided Java source code (.java) files
+are heavily commented.
+
+Although you may choose any Java IDE of your preference, the starter
+project is ready to be imported in Visual Studio Code. You should install the [Extension Pack for Java](https://code.visualstudio.com/docs/java/extensions) first.
+
+To import this project to your Visual Studio Code,
+
+1.  Unzip the starter COMP670-Othello-Student-Individual-VSCode.zip file into a new folder.
+2.  Start VS Code.
+3.  From the File menu, select `Open Folder...`, which will pop up a dialog
+    box. Navigate to the folder holding your unzipped code, then
+    click `Select Folder`.
+4.  VS Code will open your project and load it. You can browse the files from the Explorer view.
+
+<!--
 **You will only need to work on __two classes__**. First, you need to create a
 new class that implements the `OthelloAI` interface. Your class'
 name *must begin with `OthelloAI_`, followed by your `full_name`.* So, if your
@@ -57,6 +78,13 @@ name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
 
 Second, you write one line of code in the `OthelloAIFactory` class; see
 the class' comments for details.
+-->
+
+**You will only need to work on __one classes__**. You need to create a
+new class that implements the `OthelloAI` interface. Your class'
+name *must begin with `OthelloAI_`, followed by your `full_name`.* So, if your
+name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
+
 
 *Leave everything else as is. In particular, do not change the names of
 files, classes, interfaces or methods that are provided.*
