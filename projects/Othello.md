@@ -93,7 +93,7 @@ files, classes, interfaces or methods that are provided.*
 
 Make sure that your Java version is 11 or higher. It's recommended to
 install the newest Java JDK.
-
+<!--
 The `Othello` class contains a `main()` method, so to run the program,
 execute the `Othello` class.
 
@@ -101,6 +101,16 @@ When you run Othello, a window will appear with a green area with the
 label `click here to start game`. Click the green area and you will be
 asked to specify whether each player should be controlled by a human or
 the computer; for now, specify human for both, as you haven't
+implemented your AI yet. Clicking on `OK` starts the game.
+-->
+
+The `Othello` class in `OthelloGameLib.jar` contains a `main()` method, so to run the program,
+choose from the menu: Run->Run without Debugging. VS Code will execute the `Othello` class.
+
+When you run Othello, a window will appear with a green area with the
+label `click here to start game`. Click the green area and you will be
+asked to select whether each player should be controlled by a human or
+an `OthelloAI` class; for now, select human for both, as you haven't
 implemented your AI yet. Clicking on `OK` starts the game.
 
 A human-controlled player makes a move by double-clicking an empty
