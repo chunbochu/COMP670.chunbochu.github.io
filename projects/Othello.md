@@ -24,7 +24,7 @@ you create your AI class and write the necessary OthelloAIFactory class
 code (see below).
 
 ### Starting Point
-<!-- the following is deprecated
+<!-- the following is deprecated 12/09/2022
 All the code that you'll need to complete the assignment is included in
 the [COMP670-Othello-Student-Individual.zip](COMP670-Othello-Student-Individual.zip); 
 download the file, unzip it, and import to
@@ -70,7 +70,7 @@ To import this project to your Visual Studio Code,
     click `Select Folder`.
 4.  VS Code will open your project and load it. You can browse the files from the Explorer view.
 
-<!--
+<!-- the following is deprecated 12/09/2022
 **You will only need to work on __two classes__**. First, you need to create a
 new class that implements the `OthelloAI` interface. Your class'
 name *must begin with `OthelloAI_`, followed by your `full_name`.* So, if your
@@ -80,7 +80,7 @@ Second, you write one line of code in the `OthelloAIFactory` class; see
 the class' comments for details.
 -->
 
-**You will only need to work on __one classes__**. You need to create a
+**You will only need to work on __one class__**. You need to create a
 new class that implements the `OthelloAI` interface. Your class'
 name *must begin with `OthelloAI_`, followed by your `full_name`.* So, if your
 name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
@@ -93,7 +93,7 @@ files, classes, interfaces or methods that are provided.*
 
 Make sure that your Java version is 11 or higher. It's recommended to
 install the newest Java JDK.
-<!--
+<!-- the following is deprecated 12/09/2022
 The `Othello` class contains a `main()` method, so to run the program,
 execute the `Othello` class.
 
