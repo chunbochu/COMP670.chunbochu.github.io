@@ -55,7 +55,7 @@ All the code that you'll need to complete the assignment is included in
 the [COMP670-Othello-Student-Individual-VSCode.zip](COMP670-Othello-Student-Individual-VSCode.zip); 
 download the file, unzip it, and import to
 your preferred IDE. Much of the code is provided in compiled class
-files, in the jar file in the `lib` folder. The provided Java source code (.java) files
+files packaged as `OthelloGameLib.jar` in the `lib` folder. The provided Java source code (.java) files
 are heavily commented.
 
 Although you may choose any Java IDE of your preference, the starter
@@ -83,7 +83,7 @@ the class' comments for details.
 **You will only need to work on __one class__**. You need to create a
 new class that implements the `OthelloAI` interface. Your class'
 name *must begin with `OthelloAI_`, followed by your `full_name`.* So, if your
-name is John Smith, your class should be named `OthelloAI_Johnn_Smith`.
+name is John Smith, your class should be named `OthelloAI_Johnn_Smith`. It must be saved in the `src` folder.
 
 
 *Leave everything else as is. In particular, do not change the names of
@@ -92,7 +92,7 @@ files, classes, interfaces or methods that are provided.*
 ### How to run the program
 
 Make sure that your Java version is 11 or higher. It's recommended to
-install the newest Java JDK.
+install the newest Java [JDK](https://whichjdk.com/).
 <!-- the following is deprecated 12/09/2022
 The `Othello` class contains a `main()` method, so to run the program,
 execute the `Othello` class.
@@ -123,6 +123,14 @@ think is legal to use, but in which the cursor is not a hand.) The
 computer simply moves when it is its turn. The GUI animates the placing
 and flipping of tiles, so that you can see the moves in action. Status
 messages display the score and remind you whose move it is.
+
+After you implement a working `OthelloAI_` class, you can choose to play with 
+it or let it play against itself. 
+Better yet, you may implement two or more different versions of the `OthelloAI_` classes
+(say, `OthelloAI_Johnn_Smith01` and `OthelloAI_Johnn_Smith02`. All classes must be saved
+in the `src` folder) and let them play against one another.
+See the [Demo/Tournament Section](#Tournament) for restrictions on the max amount of time 
+you have to choose a move.
 
 ### Some necessary terminology
 
@@ -429,7 +437,7 @@ Again, write up your results and your conclusions as comments in your
 Othello AI class and in your final report. Be sure to tell me which
 strategy worked best and why you think it did.
 
-### Demo/Tournament
+### Demo/Tournament<a name="Tournament"></a>
 
 We will gather all your AIs together and run a demo tournament to determine who has the best one in
 the last week. The rules we will use are as follows:
