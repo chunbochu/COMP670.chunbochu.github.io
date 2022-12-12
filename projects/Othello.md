@@ -129,7 +129,7 @@ it or let it play against itself.
 Better yet, you may implement two or more different versions of the `OthelloAI_` classes
 (say, `OthelloAI_Johnn_Smith01` and `OthelloAI_Johnn_Smith02`. All classes must be saved
 in the `src` folder) and let them play against one another.
-See the [Demo Tournament Section](#demo-tournament) for restrictions on the max amount of time 
+See the [Demo And Tournament Section](#demo-and-tournament) for restrictions on the max amount of time 
 you have to choose a move.
 
 ### Some necessary terminology
@@ -437,7 +437,7 @@ Again, write up your results and your conclusions as comments in your
 Othello AI class and in your final report. Be sure to tell me which
 strategy worked best and why you think it did.
 
-### Demo Tournament
+### Demo and Tournament
 
 We will gather all your AIs together and run a demo tournament to determine who has the best one in
 the last week. The rules we will use are as follows:
