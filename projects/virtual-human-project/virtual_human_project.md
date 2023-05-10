@@ -17,9 +17,9 @@ We have created a server with Rasa Core and Rasa X installed. You can build, tra
 
 You will drop to your default home directory after logging in with your individual account. You should run
  `cd /opt/bots/<team[1|2|...]>` to switch to your team directory. You bot should be created, trained and maintained there.
-A unique port number will be assigned to each team by your professor in class. Please only run your Rasa server on that port to avoid conflicts.
+A unique pair of port numbers will be assigned to each team by your professor in class. Please only run your Rasa and Rasa X servers on your assigned ports to avoid conflicts.
 
-Please do not create a bot in your own home directory.
+Please create your team project bot in your **team** directory.
 
 
 ## Project Requirements
@@ -27,14 +27,15 @@ Please do not create a bot in your own home directory.
 Generally, conversational agents can be classified as *chit-chat bots*, which are chatbots destined for the sole purpose of maintaining a conversation, being interesting, creative or fun, and *task-oriented chatbots* which offer customer support or act as personal assistants, helping users to achieve a certain task.
 Ref: [Chatbot Categories and Their Limitations](https://dzone.com/articles/chatbots-categories-and-their-limitations-1#:~:text=The%20first%20classification%20splits%20the,to%20achieve%20a%20certain%20task.)
 
-Your team will use Rasa Open Source to build a non-trivial, task-oriented chatbot that aims to help users achieve a particular task.
-- Must use [forms](https://learning.rasa.com/conversational-ai-with-rasa/basic-forms/) to collect user's input
-- Must use [slots](https://learning.rasa.com/conversational-ai-with-rasa/slots/)
+Your team will use Rasa Open Source to build a non-trivial, task-oriented chatbot that aims to help users achieve a particular task. Your professor will announce the task for your bots.
+Your implementation should
+- use [forms](https://learning.rasa.com/conversational-ai-with-rasa/basic-forms/) to collect user's input
+- use [slots](https://learning.rasa.com/conversational-ai-with-rasa/slots/)
 
 
 ## Tasks and Deliverables
 ### Task 1: Team Formation, Tooling and Basic NLP knowledge
-Your team should complelte the following:
+Your team should complete the following:
   - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
   - started [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
   - log in to the Rasa server to get familiar with the development environment
@@ -109,13 +110,13 @@ socketio:
 - Open a browser to visit `https://rasa.cs.franklin.edu/~username` to verify the bot is connected.
 
 ### Task 2: 
-Your team should complelte the following:
+Your team should complete the following:
   - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
   - brainstorm the purpose of your bot, the task it is going to accomplish, the domain knowledge it has, external data source/API may be needed; etc.
   - compose a report to submit.
 
 ### Task 3:
-Your team should complelte the following:
+Your team should complete the following:
   - regularly review and tag conversation data via Rasa X
   - develop your own application server if needed
   - constantly train and test your bot
@@ -125,7 +126,7 @@ Your team should complelte the following:
 	  - [Setting up CI/CD](https://rasa.com/docs/rasa/setting-up-ci-cd)
  
 ### Task 4:
-Your team should complelte the following:
+Your team should complete the following:
   - identify at least one Virtual Human agent deployed by other teams
   - interact with the agent and evaluate its performance
 
@@ -137,7 +138,7 @@ It won't be surprising to anyone who's built an AI assistant that measuring succ
 - Did the assistant help the user achieve their goal?
 
 ### Task 5:
-Your team should complelte the following:
+Your team should complete the following:
 - Submit a final report
 - Submit the following deliverables
-	- A zip file including all of your bot training YAML files: `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
+	- A zip file including all of your bot training YAML files: `nlu.yml`, `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
