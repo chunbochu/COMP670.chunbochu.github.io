@@ -46,7 +46,7 @@ Your team should complete the following:
 There are many resources on creating chatbots with Rasa. [Building a Chatbot with Rasa](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324) may help you get started.
 
 #### How to create and train a default bot?
-In your home directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files. 
+In your team directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files. 
 
 Next, run `rasa train` to train your initial bot. It may take a few minutes.
 
@@ -60,54 +60,37 @@ Review the following docs first:
  - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
 
 Each team will be assigned a unique port number to run your rasa server on. You must use the assigned port to avoid conflicts with other teams.
-You should have a `public_html` folder created in your account. If not, you just have to run `mkdir ~/public_html` to create it.
-Then do the following:
- - `cd public_html`
- - `nano index.html` and copy the following:
+You should have a `public_html` folder created in your team's home directory. If not, you just have to run `mkdir ~/public_html` to create it.
+It's recommended to use an SFTP client, such as [SFTP for VSCode](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp), [WinSCP](https://winscp.net/eng/index.php)
+
+Open the `index.html` in `public_html` and copy the following:
   ```html
-<!doctype html>
-<html>
-<head>
-<title>My Chatbot Page</title>
-</head>
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>My Rasa Bot!</title>
 <body>
-<script>!(function () {
-  let e = document.createElement("script"),
-    t = document.head || document.getElementsByTagName("head")[0];
-  (e.src =
-    "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
-    // Replace 1.x.x with the version that you want
-    (e.async = !0),
-    (e.onload = () => {
-      window.WebChat.default(
-        {
-          customData: { language: "en" },
-          socketUrl: "https://{port}.rasa.cs.franklin.edu/",
-		  //title: "Chunbo's bot",
-          // add other props here
-	  initPayload: "Hey Rasa!",
-		params: {storage: "session"},
-        },
-        null
-      );
-    }),
-    t.insertBefore(e, t.firstChild);
-})();
-</script>
+<div id="rasa-chat-widget" data-avatar-background="#d65cff" data-websocket-url="https://{rasa-port}.rasa.cs.franklin.edu/"></div>
+<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+<h2>Hey, this is our chatbot powered by Rasa!</h2>
+<p>If you send the first message but did not hear from the bot, my bot may be taking a "nap". Just resend your message. If the bot does not wake up, try refreshing your browser.</p>
+	<p> You may add other information to help your users chat with your bot. </p>
 </body>
 </html>
   ```
-Note that you must replace `{port}` in `socketUrl` with your assigned port number.
-- Save the file and exit nano.
-- To use the web chat widget, SocketIO channel must be configured by adding the credentials to your `credentials.yml`:
+Note that you must replace `{rasa-port}` in `socketUrl` with your assigned Rasa server port number.
+Save the file.
+
+To use the web chat widget, SocketIO channel must be configured by adding the following to your `credentials.yml`:
 ```yaml
 socketio:
   user_message_evt: user_uttered
   bot_message_evt: bot_uttered
   session_persistence: true/false
 ```
-- Start your rasa server: `rasa run --enable-api --debug --cors="*" --port {port}`
-- Open a browser to visit `https://rasa.cs.franklin.edu/~username` to verify the bot is connected.
+
+Now start your rasa server: `rasa run --enable-api --debug --cors="*" --port {port}`.
+Open a browser to visit `https://rasa.cs.franklin.edu/~team1` to verify the bot is connected.
 
 ### Task 2: 
 Your team should complete the following:
