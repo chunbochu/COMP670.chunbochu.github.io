@@ -1,6 +1,6 @@
 # COMP 670 Virtual Human Project
 ## Introduction
-The Virtual Human Project is a team-based hands-on exercise to build a conversational AI assistant (chatbot). AI chatbots are right on the front lines of artificial intelligence and human intelligence. In this project, you will build your own chatbot with a very exciting tool: [Rasa Open Source](https://rasa.com/open-source/). Rasa is a popular open source deep learning framework for chatbot. It supplies the building blocks for creating virtual assistants: Natural Language Understanding, Dialogue Management, and Integrations.
+The Virtual Human Project is a team-based hands-on exercise to build a conversational AI assistant (chatbot). AI chatbots are right on the front lines of artificial intelligence and human intelligence. In this project, you will build your own chatbot with [Rasa Open Source](https://rasa.com/open-source/). Rasa is a popular open source deep learning framework for chatbot. It supplies the building blocks for creating virtual assistants: Natural Language Understanding, Dialogue Management, and Integrations.
 
 ## Resources
 ### Recommended readings/book:
@@ -13,56 +13,56 @@ The Virtual Human Project is a team-based hands-on exercise to build a conversat
     - Chapter 2, Natural Language Understanding in Rasa
     - Chapter 3, Rasa Core
 ### Rasa server
-We have created a server with Rasa Core and Rasa X installed. You can build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to create your bot on it.
+Thanks to Franklin's IT support, especially Alex Kelly, we have our own server with Rasa 3.2.1 and Rasa X installed so you don't have to deal with installing and configuring the tools. You can just build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to use the server.
 
-You will drop to your default home directory after logging in with your individual account. You should run
- `cd /opt/bots/<team[1|2|...]>` to switch to your team directory. You bot should be created, trained and maintained there.
-A unique pair of port numbers will be assigned to each team by your professor in class. Please only run your Rasa and Rasa X servers on your assigned ports to avoid conflicts.
+#### Account
+You will use your Franklin student's credential to log in after getting the okay from your professor. Your professor will also announce teams (typically 2 students per team) in class. You can explore the Rasa CLI commands in your own account and play around with your own bot by using `rasa shell`.
+However, each team should build, train and deploy their project bot in the team's directory.
 
-Please create your team project bot in your **team** directory.
+#### Team directory
+You will drop to your default home directory after logging in with your individual account. You should run  `cd /opt/bots/<team[1|2|...]>` to switch to your team directory. Your team's project bot should be created, trained and maintained there.
 
+#### Assigned ports
+A unique pair of port numbers (one for Rasa, the other one for Rasa X) will be assigned to each team by your professor. Please only run your Rasa and Rasa X servers on your assigned ports to avoid conflicts.
 
 ## Project Requirements
 
 Generally, conversational agents can be classified as *chit-chat bots*, which are chatbots destined for the sole purpose of maintaining a conversation, being interesting, creative or fun, and *task-oriented chatbots* which offer customer support or act as personal assistants, helping users to achieve a certain task.
 Ref: [Chatbot Categories and Their Limitations](https://dzone.com/articles/chatbots-categories-and-their-limitations-1#:~:text=The%20first%20classification%20splits%20the,to%20achieve%20a%20certain%20task.)
 
-Your team will use Rasa Open Source to build a non-trivial, task-oriented chatbot that aims to help users achieve a particular task. Your professor will announce the task for your bots.
+### Task
+Your professor will announce the task for your bots. Your team will use Rasa Open Source to build a chatbot to achieve the task.
 Your implementation should
 - use [forms](https://learning.rasa.com/conversational-ai-with-rasa/basic-forms/) to collect user's input
-- use [slots](https://learning.rasa.com/conversational-ai-with-rasa/slots/)
+- use [slots](https://learning.rasa.com/conversational-ai-with-rasa/slots/) to track information
+ 
+You should also consider using the following. You would need code in Python.
+- [Action Server](https://rasa.com/docs/action-server/)
+- [Knowledge Base](https://rasa.com/docs/rasa/action-server/knowledge-bases/)
 
 
-## Tasks and Deliverables
-### Task 1: Team Formation, Tooling and Basic NLP knowledge
-Your team should complete the following:
-  - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the book
-  - started [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
-  - log in to the Rasa server to get familiar with the development environment
+## Activities and Deliverables
+
+### Activitiy 1: Basic NLP knowledge and Rasa
+You should complete the following:
+  - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the _Conversational AI with Rasa book_
+  - watch [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
+  - log in to the Rasa server to get familiar with the development environment and rasa [CLI commands](https://rasa.com/docs/rasa/command-line-interface)
   - create and train a default bot (see below)
-  - set up an html page with your initial bot connected. We will use the Web channel. You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required (see below)
-  - explore the interface and functioinalities of Rasa X
-
+  - Team: set up an html page with your initial bot connected (see below). We will use the Web channel to publish your bot. This is important for Conversation-Driven Development (CDD). You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
+  - Team: explore the interface and functioinalities of Rasa X
 There are many resources on creating chatbots with Rasa. [Building a Chatbot with Rasa](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324) may help you get started.
 
 #### How to create and train a default bot?
-In your team directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files. 
-
+In your team directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files.
 Next, run `rasa train` to train your initial bot. It may take a few minutes.
-
-When the training finishes, run `rasa shell` to load your trained model. You talk to your assistant on the command line.
-
+When the training finishes, you talk to your bot on the command line by running `rasa shell`.
 See more about [Command Line Interface](https://rasa.com/docs/rasa/command-line-interface).
 
 #### How to integrate the chatbot in your website?
-Review the following docs first:
- - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
- - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
-
-Each team will be assigned a unique port number to run your rasa server on. You must use the assigned port to avoid conflicts with other teams.
-You should have a `public_html` folder created in your team's home directory. If not, you just have to run `mkdir ~/public_html` to create it.
-It's recommended to use an SFTP client, such as [SFTP for VSCode](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp), [WinSCP](https://winscp.net/eng/index.php)
-
+There should be a `public_html` folder created in your team's home directory. If not, you just have to run `mkdir ~/public_html` to create it.
+It's recommended to use an SFTP client , such as [SFTP for VSCode](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp), [WinSCP](https://winscp.net/eng/index.php), to edit files on the server.
+#### Step 1
 Open the `index.html` in `public_html` and copy the following:
   ```html
 <!DOCTYPE html>
@@ -78,37 +78,45 @@ Open the `index.html` in `public_html` and copy the following:
 </body>
 </html>
   ```
-Note that you must replace `{rasa-port}` in `socketUrl` with your assigned Rasa server port number.
-Save the file.
+**Replace `{rasa-port}` in `socketUrl` with your assigned Rasa server port number**
 
-To use the web chat widget, SocketIO channel must be configured by adding the following to your `credentials.yml`:
+Save the file.
+#### Step 2
+To use the web chat widget, the SocketIO channel must be configured by adding the following to your `credentials.yml`:
 ```yaml
 socketio:
   user_message_evt: user_uttered
   bot_message_evt: bot_uttered
   session_persistence: true/false
 ```
+#### Step 3
+Now start your rasa server: `rasa run --enable-api --debug --cors="*" --port {rasa-port}`.
+Open a browser to visit `https://rasa.cs.franklin.edu/~<team1|2...>` to verify the bot is connected.
 
-Now start your rasa server: `rasa run --enable-api --debug --cors="*" --port {port}`.
-Open a browser to visit `https://rasa.cs.franklin.edu/~team1` to verify the bot is connected.
+The following docs have more information for your reference:
+ - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
+ - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
 
-### Task 2: 
+### Activitiy 2: 
 Your team should complete the following:
-  - [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
-  - brainstorm the purpose of your bot, the task it is going to accomplish, the domain knowledge it has, external data source/API may be needed; etc.
-  - compose a report to submit.
+  - based on the task, discuss how your team wants to implement your bot. For example: what domain knowledge is needed, what data resource is available and how to source more data, should action server and/or knowledgebase should be used?
+  - compose an initial plan to follow the Conversation-Driven Development (CDD) approach to design, build, improve and test your bot
+  - elect a Team Leader
+  - split tasks and assign to each member
+  - use GitHub to manage your project
 
-### Task 3:
+### Activitiy 3:
 Your team should complete the following:
   - regularly review and tag conversation data via Rasa X
   - develop your own application server if needed
   - constantly train and test your bot
+  - regularly back up your training data
   - Review the following:
 	  - [Conversation-Driven Development](https://rasa.com/docs/rasa/conversation-driven-development)
 	  - [Testing Your Assistant](https://rasa.com/docs/rasa/testing-your-assistant)
 	  - [Setting up CI/CD](https://rasa.com/docs/rasa/setting-up-ci-cd)
  
-### Task 4:
+### Activitiy 4:
 Your team should complete the following:
   - identify at least one Virtual Human agent deployed by other teams
   - interact with the agent and evaluate its performance
