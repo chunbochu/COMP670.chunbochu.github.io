@@ -72,17 +72,19 @@ Open the `index.html` in `public_html` and copy the following:
 <meta charset="UTF-8">
 <title>My Rasa Bot!</title>
 <body>
-<div id="rasa-chat-widget" data-avatar-background="#d65cff" data-websocket-url="https://{rasa-port}.rasa.cs.franklin.edu/"></div>
-<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
-<h2>Hey, this is our chatbot powered by Rasa!</h2>
-<p>If you send the first message but did not hear from the bot, my bot may be taking a "nap". Just resend your message. If the bot does not wake up, try refreshing your browser.</p>
+	<div id="rasa-chat-widget" data-avatar-background="#d65cff" data-websocket-url="https://{rasa-port}.rasa.cs.franklin.edu/"></div>
+	<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
+	<h2>Hey, this is COMP 670 <Team 1|2...> chatbot powered by Rasa!</h2>
+	<p>If you send the first message but did not hear from the bot, my bot may be taking a "nap". Just resend your message. If the bot does not wake up, try refreshing your browser.</p>
 	<p> You may add other information to help your users chat with your bot. </p>
+	<h3>Hints to talk to the bot</h3> ...
+	<h3>Release history and notes</h3>
 </body>
 </html>
   ```
 **Replace `{rasa-port}` in `socketUrl` with your assigned Rasa server port number**
 
-Save the file.
+Save the file. You may want to style your `index.html` for better presentation.
 #### Step 2
 To use the web chat widget, the SocketIO channel must be configured by adding the following to your `credentials.yml`:
 ```yaml
