@@ -4,20 +4,19 @@ The Virtual Human Project is a team-based hands-on exercise to build a conversat
 
 ## Resources
 ### Recommended readings/book:
-- [Rasa Learning Center](https://learning.rasa.com/): This is a great place to learn Rasa. Tons of useful resources and videos. Docs are updated to Rasa 3.x
-- [Rasa's Official Documents](https://rasa.com/docs/rasa/)
-- [Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN	1801077053, 9781801077057. This book is free to access via your Franklin account.
-  - This is a good reference book with in-depth coverage. However, it has some out-of-date information of earlier versions of Rasa. You should use it along with Rasa's official documents above.
-  - Focus on *Section 1: The Rasa Framework* to have a good understanding of the fundamentals of the framework. It includes:
+- [Rasa's Official Documents](https://rasa.com/docs/rasa/). Shorter, precise and easy to read. This is likely your go-to place of learning and reference. Docs are updated to Rasa 3.x
+- [Rasa Learning Center](https://learning.rasa.com/): This is a great place to learn Rasa. Tons of useful resources and videos.
+- [Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN 1801077053, 9781801077057.
+  - This book is free to access via your Franklin account. It is a good reference book with in-depth coverage. However, it has some out-of-date information of earlier versions of Rasa. You should use it as supplementary to Rasa's official documents above.
+  - Focus on *Section 1: The Rasa Framework* to have a good understanding of the fundamentals of the framework:
     - Chapter 1, Introduction to Chatbots and the Rasa Framework
     - Chapter 2, Natural Language Understanding in Rasa
     - Chapter 3, Rasa Core
 ### Rasa server
-Thanks to Franklin's IT support, especially Alex Kelly, we have our own server with Rasa 3.2.1 and Rasa X installed so you don't have to deal with installing and configuring the tools. You can just build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to use the server.
+Thanks to Franklin's IT support, especially Alex Kelly, we have our own server with Rasa 3.2.1 and Rasa X Community Edition installed so you don't have to deal with installing and configuring the tools. You can just build, train and deploy your bot on it. Please read the [Rasa Server Docment](https://docs.rasa.cs.franklin.edu/) to learn how to use the server.
 
 #### Account
-You will use your Franklin student's credential to log in after getting the okay from your professor. Your professor will also announce teams (typically 2 students per team) in class. You can explore the Rasa CLI commands in your own account and play around with your own bot by using `rasa shell`.
-However, each team should build, train and deploy their project bot in the team's directory.
+You will use your Franklin student's credential to log in after getting the okay from your professor.  Use an SSH client (e.g. running the `ssh your-username@rasa.cs.franklin.edu` command in Windows PowerShell) to log in. Your professor will also announce teams (typically 2 students per team) in class. You can explore the Rasa [CLI commands](https://rasa.com/docs/rasa/command-line-interface) in your own account and play around with your own bot by using `rasa shell`. However, each team should build, train and deploy their project bot in the team's directory.
 
 #### Team directory
 You will drop to your default home directory after logging in with your individual account. You should run  `cd /opt/bots/<team[1|2|...]>` to switch to your team directory. Your team's project bot should be created, trained and maintained there.
@@ -26,7 +25,6 @@ You will drop to your default home directory after logging in with your individu
 A unique pair of port numbers (one for Rasa, the other one for Rasa X) will be assigned to each team by your professor. Please only run your Rasa and Rasa X servers on your assigned ports to avoid conflicts.
 
 ## Project Requirements
-
 Generally, conversational agents can be classified as *chit-chat bots*, which are chatbots destined for the sole purpose of maintaining a conversation, being interesting, creative or fun, and *task-oriented chatbots* which offer customer support or act as personal assistants, helping users to achieve a certain task.
 Ref: [Chatbot Categories and Their Limitations](https://dzone.com/articles/chatbots-categories-and-their-limitations-1#:~:text=The%20first%20classification%20splits%20the,to%20achieve%20a%20certain%20task.)
 
@@ -36,28 +34,32 @@ Your implementation should
 - use [forms](https://learning.rasa.com/conversational-ai-with-rasa/basic-forms/) to collect user's input
 - use [slots](https://learning.rasa.com/conversational-ai-with-rasa/slots/) to track information
  
-You should also consider using the following. You would need code in Python.
+You may also want to use the following.
 - [Action Server](https://rasa.com/docs/action-server/)
 - [Knowledge Base](https://rasa.com/docs/rasa/action-server/knowledge-bases/)
-
+Programming in Python is needed.
 
 ## Activities and Deliverables
 
 ### Activitiy 1: Basic NLP knowledge and Rasa
 You should complete the following:
-  - read "Introduction to Natural Language Processing (NLP)", "Chatbot basics" in the _Conversational AI with Rasa book_
-  - watch [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
-  - log in to the Rasa server to get familiar with the development environment and rasa [CLI commands](https://rasa.com/docs/rasa/command-line-interface)
-  - create and train a default bot (see below)
-  - Team: set up an html page with your initial bot connected (see below). We will use the Web channel to publish your bot. This is important for Conversation-Driven Development (CDD). You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
-  - Team: explore the interface and functioinalities of Rasa X
+ - individual:
+   - watch [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
+   - use the recommended learning resources to learn the basic concepts of Natural Language Processing (NLP) and Rasa, including: intent, entity, rasa training data, stories, rules, domain, actions, forms, slots 
+   - log in our course Rasa server. Get familiar with the development environment and rasa [CLI commands](https://rasa.com/docs/rasa/command-line-interface)
+ - team
+   - create and train an initial bot (see below)
+   - set up an html page with your initial bot connected (see below). We will use the Web channel to publish your bot. This is important for Conversation-Driven Development (CDD). You are welcome to explore using other channels (Facbook, Telegraph, etc.) but not required.
+   - explore the interface and functioinalities of Rasa X
+
 There are many resources on creating chatbots with Rasa. [Building a Chatbot with Rasa](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324) may help you get started.
 
-#### How to create and train a default bot?
+#### How to create and train an initial bot?
 In your team directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files.
 Next, run `rasa train` to train your initial bot. It may take a few minutes.
-When the training finishes, you talk to your bot on the command line by running `rasa shell`.
+When the training finishes, you can talk to the bot on the command line by running `rasa shell`.
 See more about [Command Line Interface](https://rasa.com/docs/rasa/command-line-interface).
+Your team can go from there to build your bot solving the given task.
 
 #### How to integrate the chatbot in your website?
 There should be a `public_html` folder created in your team's home directory. If not, you just have to run `mkdir ~/public_html` to create it.
@@ -103,14 +105,14 @@ Your team should complete the following:
   - compose an initial plan to follow the Conversation-Driven Development (CDD) approach to design, build, improve and test your bot
   - elect a Team Leader
   - split tasks and assign to each member
-  - use GitHub to manage your project
+  - use GitHub to manage your project (please invite your professor to access your repo)
 
 ### Activitiy 3:
 Your team should complete the following:
   - regularly review and tag conversation data via Rasa X
   - develop your own application server if needed
   - constantly train and test your bot
-  - regularly back up your training data
+  - regularly back up your training data. It's recommended that teams use GitHub to back up and coordinate the development. git is installed on rasa.cs.franklin.ed for your convenience.
   - Review the following:
 	  - [Conversation-Driven Development](https://rasa.com/docs/rasa/conversation-driven-development)
 	  - [Testing Your Assistant](https://rasa.com/docs/rasa/testing-your-assistant)
@@ -118,7 +120,7 @@ Your team should complete the following:
  
 ### Activitiy 4:
 Your team should complete the following:
-  - identify at least one Virtual Human agent deployed by other teams
+  - identify at least one Virtual Human Agent by other teams
   - interact with the agent and evaluate its performance
 
 Read how to [Measuring success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/)
@@ -132,4 +134,4 @@ It won't be surprising to anyone who's built an AI assistant that measuring succ
 Your team should complete the following:
 - Submit a final report
 - Submit the following deliverables
-	- A zip file including all of your bot training YAML files: `nlu.yml`, `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
+   - A zip file including all of your bot training and config YAML files: `nlu.yml`, `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
