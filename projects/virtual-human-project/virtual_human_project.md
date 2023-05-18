@@ -55,7 +55,7 @@ You should complete the following:
 There are many resources on creating chatbots with Rasa. [Building a Chatbot with Rasa](https://towardsdatascience.com/building-a-chatbot-with-rasa-3f03ecc5b324) may help you get started.
 
 #### How to create and train an initial bot?
-In your team directory on the Rasa server, run `rasa init` to reate a new project with example training data, actions, and config files.
+In your team directory on the Rasa server, create a directory where your project will be save. For example: `mkdir bot`. Then, `cd bot`. Run `rasa init` to reate a new project with default training data and config files.
 Next, run `rasa train` to train your initial bot. It may take a few minutes.
 When the training finishes, you can talk to the bot on the command line by running `rasa shell`.
 See more about [Command Line Interface](https://rasa.com/docs/rasa/command-line-interface).
@@ -86,7 +86,7 @@ Open the `index.html` in `public_html` and copy the following:
 
 Save the file. You may want to style your `index.html` for better presentation.
 #### Step 2
-To use the web chat widget, the SocketIO channel must be configured by adding the following to your `credentials.yml`:
+To use the web chat widget, the SocketIO channel must be configured by adding the following to your `/bot/credentials.yml`:
 ```yaml
 socketio:
   user_message_evt: user_uttered
@@ -135,5 +135,22 @@ It won't be surprising to anyone who's built an AI assistant that measuring succ
 ### Task 5:
 Your team should complete the following:
 - Submit a final report
-- Submit the following deliverables
-   - A zip file including all of your bot training and config YAML files: `nlu.yml`, `domain.yml`, `stories.yml`, `policy.yml`, `rules.yml`, `endpoints.yml`, `config.yml`
+- Submit a single zip file of `/public_html/index.html` and the entire bot directory and files EXCEPT `models`:
+```
+.
+├── actions
+│   ├── __init__.py
+│   └── actions.py
+├── config.yml
+├── credentials.yml
+├── data
+│   ├── nlu.yml
+│   └── stories.yml
+├── domain.yml
+├── endpoints.yml
+├── models
+│   └── <timestamp>.tar.gz
+└── tests
+   └── test_stories.yml
+```
+**Note: do not include the models directory**
