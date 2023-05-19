@@ -4,7 +4,7 @@ The Virtual Human Project is a team-based hands-on exercise to build a conversat
 
 ## Resources
 ### Recommended readings/book:
-- [Rasa's Official Documents](https://rasa.com/docs/rasa/). Shorter, precise and easy to read. This is likely your go-to place of learning and reference. Docs are updated to Rasa 3.x
+- [Rasa's Official Documents](https://rasa.com/docs/rasa/). Shorter, concise and easy to read. This is likely your go-to place of learning and reference. Docs are updated to Rasa 3.x
 - [Rasa Learning Center](https://learning.rasa.com/): This is a great place to learn Rasa. Tons of useful resources and videos.
 - [Conversational AI with Rasa: Build, Test, and Deploy AI-powered, Enterprise-grade Virtual Assistants and Chatbots](https://learning.oreilly.com/library/view/-/9781801077057/?ar). Xiaoquan Kong, Guan Wang. Packt Publishing, 2021. ISBN 1801077053, 9781801077057.
   - This book is free to access via your Franklin account. It is a good reference book with in-depth coverage. However, it has some out-of-date information of earlier versions of Rasa. You should use it as supplementary to Rasa's official documents above.
@@ -34,7 +34,7 @@ Your implementation should
 - use [forms](https://learning.rasa.com/conversational-ai-with-rasa/basic-forms/) to collect user's input
 - use [slots](https://learning.rasa.com/conversational-ai-with-rasa/slots/) to track information
  
-You may also want to use the following.
+You may also want to use the following:
 - [Action Server](https://rasa.com/docs/action-server/)
 - [Knowledge Base](https://rasa.com/docs/rasa/action-server/knowledge-bases/)
 Programming in Python is needed.
@@ -74,11 +74,14 @@ Open the `index.html` in `public_html` and copy the following:
 <body>
 	<div id="rasa-chat-widget" data-avatar-background="#d65cff" data-websocket-url="https://{rasa-port}.rasa.cs.franklin.edu/"></div>
 	<script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
-	<h2>Hey, this is COMP 670 <Team 1|2...> chatbot powered by Rasa!</h2>
-	<p>If you send the first message but did not hear from the bot, my bot may be taking a "nap". Just resend your message. If the bot does not wake up, try refreshing your browser.</p>
-	<p> You may add other information to help your users chat with your bot. </p>
-	<h3>Hints to talk to the bot</h3> ...
-	<h3>Release history and notes</h3>
+	
+	<h2>Hey, this is COMP 670 <Team 1|2...> Virtual Assistant powered by Rasa!</h2>
+	<p>If you send the first message but did not hear from the bot, my bot may be taking a "nap". 
+	 Just resend your message. If the bot does not wake up, try refreshing your browser.</p>
+	<h3>Hints to talk to the bot</h3>
+	 <p>You may add other information to help your users chat with your bot, such as example questions, 
+            what kinds of questions the bot can and cannot answer.</p>
+	<h3>Release history and notes</h3> ...
 </body>
 </html>
   ```
@@ -103,18 +106,19 @@ The following docs have more information for your reference:
 
 ### Activitiy 2: 
 Your team should complete the following:
-  - based on the task, discuss how your team wants to implement your bot. For example: what domain knowledge is needed, what data resource is available and how to source more data, should action server and/or knowledgebase should be used?
-  - compose an initial plan to follow the Conversation-Driven Development (CDD) approach to design, build, improve and test your bot
-  - elect a Team Leader
+  - based on the given task, discuss how your team wants to design and implement your bot. For example: what domain knowledge is needed, what data resource is available and how to source more data, should action server and/or knowledgebase should be used, how to test your bot, who are you potential users, how to manage the project and coordinate with each other, how to communicate with each other, etc.
+  - compose an initial plan to follow the Conversation-Driven Development (CDD) approach to address the questions listed above
+  - elect a Team Leader. The TL will serve as the "teach lead". In case of disagreement between team members, the TL will make the decision. The TL will also submit deliverables of team tasks on behalf of the team.
   - split tasks and assign to each member
-  - use GitHub to manage your project (please invite your professor to access your repo)
+  - GitHub is recommended to manage your project and coordinate the development (git is installed on rasa.cs.franklin.edu for your convenienc. Please invite your professor to access your repo.)
 
 ### Activitiy 3:
 Your team should complete the following:
   - regularly review and tag conversation data via Rasa X
   - develop your own application server if needed
   - constantly train and test your bot
-  - regularly back up your training data. It's recommended that teams use GitHub to back up and coordinate the development. git is installed on rasa.cs.franklin.ed for your convenience.
+  - regularly back up your training data 
+  - periodically purge models no longer needed to free up storage
   - Review the following:
 	  - [Conversation-Driven Development](https://rasa.com/docs/rasa/conversation-driven-development)
 	  - [Testing Your Assistant](https://rasa.com/docs/rasa/testing-your-assistant)
@@ -134,7 +138,7 @@ It won't be surprising to anyone who's built an AI assistant that measuring succ
 
 ### Task 5:
 Your team should complete the following:
-- Submit a final report
+- Submit a final report (details are coming soon)
 - Submit a single zip file of `/public_html/index.html` and the entire bot directory and files EXCEPT `models`:
 ```
 .
