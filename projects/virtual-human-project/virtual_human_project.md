@@ -45,7 +45,7 @@ Programming in Python is needed.
 You should complete the following:
  - individual:
    - watch [Conversational AI with Rasa](https://learning.rasa.com/conversational-ai-with-rasa/introduction-to-rasa/)
-   - use the recommended learning resources to learn the basic concepts of Natural Language Processing (NLP) and Rasa, including: intent, entity, rasa training data, stories, rules, domain, actions, forms, slots 
+   - use the recommended learning resources to learn the basic concepts of Natural Language Processing (NLP) and Rasa, including: intent, entity, rasa training data, stories, rules, domain, actions, forms, slots, [Conversation-Driven Development](https://rasa.com/docs/rasa/conversation-driven-development)
    - log in our course Rasa server. Get familiar with the development environment and rasa [CLI commands](https://rasa.com/docs/rasa/command-line-interface)
  - team
    - create and train an initial bot (see below)
@@ -85,11 +85,11 @@ Open the `index.html` in `public_html` and copy the following:
 </body>
 </html>
   ```
-**Replace `{rasa-port}` in `socketUrl` with your assigned Rasa server port number**
+**Replace `{rasa-port}` in `data-websocket-url` with your assigned Rasa server port number**
 
 Save the file. You may want to style your `index.html` for better presentation.
 #### Step 2
-To use the web chat widget, the SocketIO channel must be configured by adding the following to your `/bot/credentials.yml`:
+To use the web chat widget, the SocketIO channel must be configured. Uncomment the following section in your `/bot/credentials.yml` and set the values as:
 ```yaml
 socketio:
   user_message_evt: user_uttered
@@ -106,20 +106,22 @@ The following docs have more information for your reference:
 
 ### Activitiy 2: 
 Your team should complete the following:
-  - based on the given task, discuss how your team wants to design and implement your bot. For example: what domain knowledge is needed, what data resource is available and how to source more data, should action server and/or knowledgebase should be used, how to test your bot, who are you potential users, how to manage the project and coordinate with each other, how to communicate with each other, etc.
-  - compose an initial plan to follow the Conversation-Driven Development (CDD) approach to address the questions listed above
-  - elect a Team Leader. The TL will serve as the "teach lead". In case of disagreement between team members, the TL will make the decision. The TL will also submit deliverables of team tasks on behalf of the team.
-  - split tasks and assign to each member
+  - based on the given task, discuss how your team wants to design and implement your bot. For example: what domain knowledge is needed, what data resource is available and how to source more data, should an action server and/or knowledgebase be used, how to test your bot, who are you potential users, how to manage the project and coordinate/communicate with each other, etc.
+  - elect a Team Leader. The TL will submit deliverables of team tasks on behalf of the team. The TL will also serve as the "teach lead". For example, in case of disagreement between team members, the TL will make the decision
+  - compose an initial design report based on your team discussion and the Conversation-Driven Development (CDD) approach
+  - identify subtasks and assign to each member with deliverables and due dates
   - GitHub is recommended to manage your project and coordinate the development (git is installed on rasa.cs.franklin.edu for your convenienc. Please invite your professor to access your repo.)
 
 ### Activitiy 3:
-Your team should complete the following:
-  - regularly review and tag conversation data via Rasa X
-  - develop your own application server if needed
-  - constantly train and test your bot
-  - regularly back up your training data 
-  - periodically purge models no longer needed to free up storage
-  - Review the following:
+You should complete the following:
+ - individual: submit the Weekly Project Status Report
+ - team
+   - regularly review and tag conversation data in Rasa X
+   - continuously develop your own application server if needed
+   - constantly train and test your bot
+   - regularly back up your training data 
+   - periodically purge models no longer needed to free up storage
+   - Review the following:
 	  - [Conversation-Driven Development](https://rasa.com/docs/rasa/conversation-driven-development)
 	  - [Testing Your Assistant](https://rasa.com/docs/rasa/testing-your-assistant)
 	  - [Setting up CI/CD](https://rasa.com/docs/rasa/setting-up-ci-cd)
@@ -127,16 +129,15 @@ Your team should complete the following:
 ### Activitiy 4:
 Your team should complete the following:
   - identify at least one Virtual Human Agent by other teams
-  - interact with the agent and evaluate its performance
+  - interact with the agent and evaluate its performance. It won't be surprising to anyone who's built an AI assistant that measuring success can be subjective. Success can mean a lot of different things:
+    - Did the assistant correctly classify a message's intent and extract the right entities?
+    - Was the right response selected?
+    - Was the user's sentiment positive?
+    - Did the assistant help the user achieve their goal?
 
-Read how to [Measuring success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/)
-It won't be surprising to anyone who's built an AI assistant that measuring success can be subjective. Success can mean a lot of different things:
-- Did the assistant correctly classify a message's intent and extract the right entities?
-- Was the right response selected?
-- Was the user's sentiment positive?
-- Did the assistant help the user achieve their goal?
+Review [how to measure success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/).
 
-### Task 5:
+### Activitiy 5:
 Your team should complete the following:
 - Submit a final report (details are coming soon)
 - Submit a single zip file of `/public_html/index.html` and the entire bot directory and files EXCEPT `models`:
