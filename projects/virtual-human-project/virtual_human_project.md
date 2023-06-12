@@ -104,12 +104,12 @@ The following docs have more information for your reference:
  - [Website Integration](https://learning.rasa.com/conversational-ai-with-rasa/website-integration/)
  - [Your Own Website](https://rasa.com/docs/rasa/connectors/your-own-website/)
 
-### Activitiy 2: 
+### Activity 2: 
 Your team should complete the following:
-  - based on the given task, discuss how your team wants to design and implement your bot. For example: what domain knowledge is needed, what data resource is available and how to source more data, should an action server and/or knowledgebase be used, how to test your bot, who are you potential users, how to manage the project and coordinate/communicate with each other, etc.
-  - elect a Team Leader. The TL will submit deliverables of team tasks on behalf of the team. The TL will also serve as the "teach lead". For example, in case of disagreement between team members, the TL will make the decision
-  - compose an initial design report based on your team discussion and the Conversation-Driven Development (CDD) approach
-  - identify subtasks and assign to each member with deliverables and due dates
+  - based on the given task, discuss how your team wants to design and implement your bot. For example: what domain knowledge is needed, what type of questions should the bot answer, what data resource is available and how to source more data, should an action server and/or knowledgebase be used, how to test your bot, who are your potential users, how to manage the project and coordinate/communicate with team members, etc.
+  - elect a Team Leader. The TL will submit deliverables of team tasks on behalf of the team. The TL will also serve as the "teach lead". For example, in case of disagreement between team members, the TL will make the decision.
+  - compose an initial design report based on your team discussion and the Conversation-Driven Development (CDD) approach.
+  - identify subtasks and assign to each member with deliverables and due dates.
   - GitHub is recommended to manage your project and coordinate the development (git is installed on rasa.cs.franklin.edu for your convenienc. Please invite your professor to access your repo.)
 
 ### Activitiy 3:
