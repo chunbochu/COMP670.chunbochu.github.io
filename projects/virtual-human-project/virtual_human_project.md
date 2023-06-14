@@ -116,8 +116,9 @@ Your team should complete the following:
 You should complete the following:
  - individual: submit the Weekly Project Status Report
  - team
-   - regularly review and tag conversation data in Rasa X
-   - continuously develop your own application server if needed
+   - create the bot web page and share with your users
+   - regularly review and update conversation data in Rasa X
+   - continuously develop/improve your own action server if needed
    - constantly train and test your bot
    - regularly back up your training data 
    - periodically purge models no longer needed to free up storage
