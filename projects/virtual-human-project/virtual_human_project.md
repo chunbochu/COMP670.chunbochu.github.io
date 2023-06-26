@@ -114,7 +114,7 @@ Your team should complete the following:
 
 ### Activitiy 3:
 You should complete the following:
- - individual: Use this [template](COMP-670-Virtual-Human-Project-Weekly-Individual-Report-short) to create and submit a Weekly Status Report. 
+ - individual: Use this [template](COMP-670-Virtual-Human-Project-Weekly-Individual-Report-short.docx) to create and submit a Weekly Status Report. 
  - team
    - create the bot web page and share with your users
    - regularly review and update conversation data in Rasa X
