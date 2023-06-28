@@ -129,19 +129,27 @@ You should complete the following:
  
 ### Activitiy 4:
 Your team should complete the following:
-  - identify at least one Virtual Human Agent by other teams
-  - interact with the agent and evaluate its performance. It won't be surprising to anyone who's built an AI assistant that measuring success can be subjective. Success can mean a lot of different things:
+  - identify one Virtual Human Agent: if your team number is `i` and there are `n` teams in the class, then evaluate team `(i mod n)+1`.
+  - interact with the agent and evaluate its performance. It won't be surprising to anyone who's built an AI assistant that measuring success can be subjective. Success can mean a lot of different things. For example:
     - Did the assistant correctly classify a message's intent and extract the right entities?
     - Was the right response selected?
     - Was the user's sentiment positive?
     - Did the assistant help the user achieve their goal?
+    - Is the agent able to perform well for itsgiven task?
+    - How does it handle unexpected questions (unhappy path)?
+    - Do the agent appear to be intelligent or even human?
+  - Prepare a report with your evaluation based on these suggested questions.
 
-Review [how to measure success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/).
+Reference: [how to measure success](https://rasa.com/blog/using-conversation-tags-to-measure-carbon-bots-success-rate/).
 
 ### Activitiy 5:
 Your team should complete the following:
-- Submit a final report (details are coming soon)
-- Submit a single zip file of `/public_html/index.html` and the entire bot directory and files EXCEPT `models`:
+- Prepare a final report covering the following aspects of the project:
+  - Explain how you sourced and used domain knowledge.
+  - Explain in details how you build the agent with Rasa.
+  - What is the training process and testing strategy did you use?
+  - What problems or challenges did you encounter?
+- Generate a single zip file of `/public_html/index.html` and the entire bot directory and files EXCEPT `models`:
 ```
 .
 ├── actions
